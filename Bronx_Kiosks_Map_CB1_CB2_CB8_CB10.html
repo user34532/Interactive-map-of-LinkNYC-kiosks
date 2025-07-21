@@ -1,0 +1,2477 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_8626d53127b48b3168f1983fa09113d4 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_8626d53127b48b3168f1983fa09113d4" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_8626d53127b48b3168f1983fa09113d4 = L.map(
+                "map_8626d53127b48b3168f1983fa09113d4",
+                {
+                    center: [40.8448, -73.8648],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_0704882b6c0d3f0c6cf1e3994a74e9e3 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_8626d53127b48b3168f1983fa09113d4);
+        
+    
+            var marker_cluster_559beed95ddc255919c38364ca3abf50 = L.markerClusterGroup(
+                {}
+            );
+            map_8626d53127b48b3168f1983fa09113d4.addLayer(marker_cluster_559beed95ddc255919c38364ca3abf50);
+        
+    
+            var marker_324300f8b473e41e92ecbc41b9d2a7b5 = L.marker(
+                [40.80682, -73.917657],
+                {}
+            ).addTo(marker_cluster_559beed95ddc255919c38364ca3abf50);
+        
+    
+            var icon_22e37ea702f221128e743573befc58b4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_324300f8b473e41e92ecbc41b9d2a7b5.setIcon(icon_22e37ea702f221128e743573befc58b4);
+        
+    
+        var popup_a9ab864a708c13b94ca7eb5cb108b9f8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e29c9396be0c17dfb8b3a5120cf03114 = $(`<div id="html_e29c9396be0c17dfb8b3a5120cf03114" style="width: 100.0%; height: 100.0%;">     <strong>Site ID:</strong> bx-01-119011<br>     <strong>Type:</strong> Link1.0<br>     <strong>Status:</strong> Live<br>     <strong>Address:</strong> 548 EAST 138 STREET<br>     <strong>CB:</strong> 201     </div>`)[0];
+            popup_a9ab864a708c13b94ca7eb5cb108b9f8.setContent(html_e29c9396be0c17dfb8b3a5120cf03114);
+        
+
+        marker_324300f8b473e41e92ecbc41b9d2a7b5.bindPopup(popup_a9ab864a708c13b94ca7eb5cb108b9f8)
+        ;
+
+        
+    
+    
+            var marker_35efe588b63be0de2159c570b20b524f = L.marker(
+                [40.819394, -73.916163],
+                {}
+            ).addTo(marker_cluster_559beed95ddc255919c38364ca3abf50);
+        
+    
+            var icon_107855b2a195206f08550ad26c121701 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_35efe588b63be0de2159c570b20b524f.setIcon(icon_107855b2a195206f08550ad26c121701);
+        
+    
+        var popup_e075753f363cbaa1b26c5a9ba82b5111 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1dc197f382b5ff471f4e8d10b6744750 = $(`<div id="html_1dc197f382b5ff471f4e8d10b6744750" style="width: 100.0%; height: 100.0%;">     <strong>Site ID:</strong> bx-01-146074<br>     <strong>Type:</strong> Link1.0<br>     <strong>Status:</strong> Live<br>     <strong>Address:</strong> 680 MELROSE AVENUE<br>     <strong>CB:</strong> 201     </div>`)[0];
+            popup_e075753f363cbaa1b26c5a9ba82b5111.setContent(html_1dc197f382b5ff471f4e8d10b6744750);
+        
+
+        marker_35efe588b63be0de2159c570b20b524f.bindPopup(popup_e075753f363cbaa1b26c5a9ba82b5111)
+        ;
+
+        
+    
+    
+            var marker_1d04d15831b4b4d6543c0bfeac943c05 = L.marker(
+                [40.810896, -73.921434],
+                {}
+            ).addTo(marker_cluster_559beed95ddc255919c38364ca3abf50);
+        
+    
+            var icon_513bfd9cd9fa295113ef9d027c9088bd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_1d04d15831b4b4d6543c0bfeac943c05.setIcon(icon_513bfd9cd9fa295113ef9d027c9088bd);
+        
+    
+        var popup_fb74a02108e2d37af6366182310bc6ce = L.popup({"maxWidth": "100%"});
+
+        
+            var html_61fdfcd2cac3d85153aa6760616df37d = $(`<div id="html_61fdfcd2cac3d85153aa6760616df37d" style="width: 100.0%; height: 100.0%;">     <strong>Site ID:</strong> bx-01-138789<br>     <strong>Type:</strong> Link1.0<br>     <strong>Status:</strong> Live<br>     <strong>Address:</strong> 312 WILLIS AVENUE<br>     <strong>CB:</strong> 201     </div>`)[0];
+            popup_fb74a02108e2d37af6366182310bc6ce.setContent(html_61fdfcd2cac3d85153aa6760616df37d);
+        
+
+        marker_1d04d15831b4b4d6543c0bfeac943c05.bindPopup(popup_fb74a02108e2d37af6366182310bc6ce)
+        ;
+
+        
+    
+    
+            var marker_534eb185be10784ad829d6140db162cd = L.marker(
+                [40.823858, -73.89396],
+                {}
+            ).addTo(marker_cluster_559beed95ddc255919c38364ca3abf50);
+        
+    
+            var icon_ed57a712db818ea75fc75599f1981414 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_534eb185be10784ad829d6140db162cd.setIcon(icon_ed57a712db818ea75fc75599f1981414);
+        
+    
+        var popup_d200f9411f3d0904dc3f840c03202e89 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_db3d6ef73a3e1bf3f1422348fd9d5ae1 = $(`<div id="html_db3d6ef73a3e1bf3f1422348fd9d5ae1" style="width: 100.0%; height: 100.0%;">     <strong>Site ID:</strong> bx-02-157103<br>     <strong>Type:</strong> Link1.0<br>     <strong>Status:</strong> Live<br>     <strong>Address:</strong> 995 WESTCHESTER AVENUE<br>     <strong>CB:</strong> 202     </div>`)[0];
+            popup_d200f9411f3d0904dc3f840c03202e89.setContent(html_db3d6ef73a3e1bf3f1422348fd9d5ae1);
+        
+
+        marker_534eb185be10784ad829d6140db162cd.bindPopup(popup_d200f9411f3d0904dc3f840c03202e89)
+        ;
+
+        
+    
+    
+            var marker_e44e365fa0af1687020f45437a0679a8 = L.marker(
+                [40.816752, -73.929243],
+                {}
+            ).addTo(marker_cluster_559beed95ddc255919c38364ca3abf50);
+        
+    
+            var icon_d3e89bdea01f78083cf1916e20774a9e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_e44e365fa0af1687020f45437a0679a8.setIcon(icon_d3e89bdea01f78083cf1916e20774a9e);
+        
+    
+        var popup_13904a9042488f3476775dbd33e32231 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0e7ba1b93ada236efc517843245245c9 = $(`<div id="html_0e7ba1b93ada236efc517843245245c9" style="width: 100.0%; height: 100.0%;">     <strong>Site ID:</strong> bx-01-145820<br>     <strong>Type:</strong> Link1.0<br>     <strong>Status:</strong> Live<br>     <strong>Address:</strong> 140 EAST 144 STREET<br>     <strong>CB:</strong> 201     </div>`)[0];
+            popup_13904a9042488f3476775dbd33e32231.setContent(html_0e7ba1b93ada236efc517843245245c9);
+        
+
+        marker_e44e365fa0af1687020f45437a0679a8.bindPopup(popup_13904a9042488f3476775dbd33e32231)
+        ;
+
+        
+    
+    
+            var marker_5abc8ab0542f4bb52ca5185011d7f8b1 = L.marker(
+                [40.817512, -73.928886],
+                {}
+            ).addTo(marker_cluster_559beed95ddc255919c38364ca3abf50);
+        
+    
+            var icon_b602d60bce88037fab1e444103162bf8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_5abc8ab0542f4bb52ca5185011d7f8b1.setIcon(icon_b602d60bce88037fab1e444103162bf8);
+        
+    
+        var popup_4971f96a12eaf8ab7ad803e20abb72f3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d47f7966b101ce8d51c95c44ba7e6e68 = $(`<div id="html_d47f7966b101ce8d51c95c44ba7e6e68" style="width: 100.0%; height: 100.0%;">     <strong>Site ID:</strong> bx-01-145819<br>     <strong>Type:</strong> Link1.0<br>     <strong>Status:</strong> Live<br>     <strong>Address:</strong> 135 EAST 146 STREET<br>     <strong>CB:</strong> 201     </div>`)[0];
+            popup_4971f96a12eaf8ab7ad803e20abb72f3.setContent(html_d47f7966b101ce8d51c95c44ba7e6e68);
+        
+
+        marker_5abc8ab0542f4bb52ca5185011d7f8b1.bindPopup(popup_4971f96a12eaf8ab7ad803e20abb72f3)
+        ;
+
+        
+    
+    
+            var marker_9ff0bc58bd184a63ea6694612dbdb56b = L.marker(
+                [40.818017, -73.916791],
+                {}
+            ).addTo(marker_cluster_559beed95ddc255919c38364ca3abf50);
+        
+    
+            var icon_e90911cffd1eaae3bdacd46d723193b1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_9ff0bc58bd184a63ea6694612dbdb56b.setIcon(icon_e90911cffd1eaae3bdacd46d723193b1);
+        
+    
+        var popup_9a415ca11ca62f70e93482b1475568f0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_60d576b14c7bc65ff5a2ada9729542ea = $(`<div id="html_60d576b14c7bc65ff5a2ada9729542ea" style="width: 100.0%; height: 100.0%;">     <strong>Site ID:</strong> bx-01-146062<br>     <strong>Type:</strong> Link1.0<br>     <strong>Status:</strong> Live<br>     <strong>Address:</strong> 624 MELROSE AVENUE<br>     <strong>CB:</strong> 201     </div>`)[0];
+            popup_9a415ca11ca62f70e93482b1475568f0.setContent(html_60d576b14c7bc65ff5a2ada9729542ea);
+        
+
+        marker_9ff0bc58bd184a63ea6694612dbdb56b.bindPopup(popup_9a415ca11ca62f70e93482b1475568f0)
+        ;
+
+        
+    
+    
+            var marker_3a0ff422382871cab020342a03b59819 = L.marker(
+                [40.816952, -73.895711],
+                {}
+            ).addTo(marker_cluster_559beed95ddc255919c38364ca3abf50);
+        
+    
+            var icon_a407bf8ee47af7f312ac1789a9dc7cc8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_3a0ff422382871cab020342a03b59819.setIcon(icon_a407bf8ee47af7f312ac1789a9dc7cc8);
+        
+    
+        var popup_016ff8cc73d8624f9e3073787103398c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_65053a3273f2aa03916606f0c7e65d50 = $(`<div id="html_65053a3273f2aa03916606f0c7e65d50" style="width: 100.0%; height: 100.0%;">     <strong>Site ID:</strong> bx-02-113121<br>     <strong>Type:</strong> Link1.0<br>     <strong>Status:</strong> Live<br>     <strong>Address:</strong> 809 SOUTHERN BOULEVARD<br>     <strong>CB:</strong> 202     </div>`)[0];
+            popup_016ff8cc73d8624f9e3073787103398c.setContent(html_65053a3273f2aa03916606f0c7e65d50);
+        
+
+        marker_3a0ff422382871cab020342a03b59819.bindPopup(popup_016ff8cc73d8624f9e3073787103398c)
+        ;
+
+        
+    
+    
+            var marker_c8d0db4fa4b578682db4a3a62fc03171 = L.marker(
+                [40.8366, -73.84436],
+                {}
+            ).addTo(marker_cluster_559beed95ddc255919c38364ca3abf50);
+        
+    
+            var icon_8ea1fa9eb383b085692cc6d3c6eca437 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_c8d0db4fa4b578682db4a3a62fc03171.setIcon(icon_8ea1fa9eb383b085692cc6d3c6eca437);
+        
+    
+        var popup_7c84706d54e3512291349c7cfbd17039 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_643c3f24d6ecc09177a715f9abdf8a81 = $(`<div id="html_643c3f24d6ecc09177a715f9abdf8a81" style="width: 100.0%; height: 100.0%;">     <strong>Site ID:</strong> bx-10-160008<br>     <strong>Type:</strong> Link5G_NonAd<br>     <strong>Status:</strong> Live<br>     <strong>Address:</strong> 1331 HERSCHELL STREET<br>     <strong>CB:</strong> 210     </div>`)[0];
+            popup_7c84706d54e3512291349c7cfbd17039.setContent(html_643c3f24d6ecc09177a715f9abdf8a81);
+        
+
+        marker_c8d0db4fa4b578682db4a3a62fc03171.bindPopup(popup_7c84706d54e3512291349c7cfbd17039)
+        ;
+
+        
+    
+    
+            var marker_028b051bbd306f087ec587b6a9d38735 = L.marker(
+                [40.813436, -73.898846],
+                {}
+            ).addTo(marker_cluster_559beed95ddc255919c38364ca3abf50);
+        
+    
+            var icon_db3e48c8439846dd30eaa41f20f62f7a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_028b051bbd306f087ec587b6a9d38735.setIcon(icon_db3e48c8439846dd30eaa41f20f62f7a);
+        
+    
+        var popup_112f64409b6233b93e3f149f4dd1845b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1ca25e85fecdc4d14877920eba027937 = $(`<div id="html_1ca25e85fecdc4d14877920eba027937" style="width: 100.0%; height: 100.0%;">     <strong>Site ID:</strong> bx-02-153487<br>     <strong>Type:</strong> Link5G_Ad<br>     <strong>Status:</strong> Live<br>     <strong>Address:</strong> 700 SOUTHERN BOULEVARD<br>     <strong>CB:</strong> 202     </div>`)[0];
+            popup_112f64409b6233b93e3f149f4dd1845b.setContent(html_1ca25e85fecdc4d14877920eba027937);
+        
+
+        marker_028b051bbd306f087ec587b6a9d38735.bindPopup(popup_112f64409b6233b93e3f149f4dd1845b)
+        ;
+
+        
+    
+    
+            var marker_a73e0da018cfb3c75d9bff8a0d20c706 = L.marker(
+                [40.808544, -73.929074],
+                {}
+            ).addTo(marker_cluster_559beed95ddc255919c38364ca3abf50);
+        
+    
+            var icon_1f08ea002fd091366f0b0710dc1cffe9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_a73e0da018cfb3c75d9bff8a0d20c706.setIcon(icon_1f08ea002fd091366f0b0710dc1cffe9);
+        
+    
+        var popup_3d41e403351729fc798d80371402d69d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_db5bd6cc32fc298cfa3b1e022ef3adb8 = $(`<div id="html_db5bd6cc32fc298cfa3b1e022ef3adb8" style="width: 100.0%; height: 100.0%;">     <strong>Site ID:</strong> bx-01-145852<br>     <strong>Type:</strong> Link1.0<br>     <strong>Status:</strong> Live<br>     <strong>Address:</strong> 141 LINCOLN AVENUE<br>     <strong>CB:</strong> 201     </div>`)[0];
+            popup_3d41e403351729fc798d80371402d69d.setContent(html_db5bd6cc32fc298cfa3b1e022ef3adb8);
+        
+
+        marker_a73e0da018cfb3c75d9bff8a0d20c706.bindPopup(popup_3d41e403351729fc798d80371402d69d)
+        ;
+
+        
+    
+    
+            var marker_620ad26892c0f8c24715aaee0f37dd08 = L.marker(
+                [40.81851, -73.914614],
+                {}
+            ).addTo(marker_cluster_559beed95ddc255919c38364ca3abf50);
+        
+    
+            var icon_9818eae0ca02080c3851bd8a4a38e0fe = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_620ad26892c0f8c24715aaee0f37dd08.setIcon(icon_9818eae0ca02080c3851bd8a4a38e0fe);
+        
+    
+        var popup_0767a23b3eda4023c70366a52dea6269 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d9e5dcc694a4972dacdd62cda49448d5 = $(`<div id="html_d9e5dcc694a4972dacdd62cda49448d5" style="width: 100.0%; height: 100.0%;">     <strong>Site ID:</strong> bx-01-123214<br>     <strong>Type:</strong> Link1.0<br>     <strong>Status:</strong> Live<br>     <strong>Address:</strong> 2969 3 AVENUE<br>     <strong>CB:</strong> 201     </div>`)[0];
+            popup_0767a23b3eda4023c70366a52dea6269.setContent(html_d9e5dcc694a4972dacdd62cda49448d5);
+        
+
+        marker_620ad26892c0f8c24715aaee0f37dd08.bindPopup(popup_0767a23b3eda4023c70366a52dea6269)
+        ;
+
+        
+    
+    
+            var marker_7478e8cf38c88fd88e1789ab23347dfa = L.marker(
+                [40.813998, -73.919171],
+                {}
+            ).addTo(marker_cluster_559beed95ddc255919c38364ca3abf50);
+        
+    
+            var icon_392af7c19905473a9f1b3a44146d308d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_7478e8cf38c88fd88e1789ab23347dfa.setIcon(icon_392af7c19905473a9f1b3a44146d308d);
+        
+    
+        var popup_db15d9209fbe87dfdc2dceaba7452b2f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a301751d4176ebf7320a8ef5ba8601ca = $(`<div id="html_a301751d4176ebf7320a8ef5ba8601ca" style="width: 100.0%; height: 100.0%;">     <strong>Site ID:</strong> bx-01-116238<br>     <strong>Type:</strong> Link1.0<br>     <strong>Status:</strong> Live<br>     <strong>Address:</strong> 460 WILLIS AVENUE<br>     <strong>CB:</strong> 201     </div>`)[0];
+            popup_db15d9209fbe87dfdc2dceaba7452b2f.setContent(html_a301751d4176ebf7320a8ef5ba8601ca);
+        
+
+        marker_7478e8cf38c88fd88e1789ab23347dfa.bindPopup(popup_db15d9209fbe87dfdc2dceaba7452b2f)
+        ;
+
+        
+    
+    
+            var marker_8b78e0d8590d1e3b55fa3bafc83ad8f2 = L.marker(
+                [40.826714, -73.891644],
+                {}
+            ).addTo(marker_cluster_559beed95ddc255919c38364ca3abf50);
+        
+    
+            var icon_0b016e814bf34e9e3bf4f8fee61717f1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_8b78e0d8590d1e3b55fa3bafc83ad8f2.setIcon(icon_0b016e814bf34e9e3bf4f8fee61717f1);
+        
+    
+        var popup_f785c2ef43d58ce7d28ba13973b3cb2c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dd9375488041b765e6f8ffe74f862044 = $(`<div id="html_dd9375488041b765e6f8ffe74f862044" style="width: 100.0%; height: 100.0%;">     <strong>Site ID:</strong> bx-02-119044<br>     <strong>Type:</strong> Link1.0<br>     <strong>Status:</strong> Live<br>     <strong>Address:</strong> 962 EAST 167 STREET<br>     <strong>CB:</strong> 202     </div>`)[0];
+            popup_f785c2ef43d58ce7d28ba13973b3cb2c.setContent(html_dd9375488041b765e6f8ffe74f862044);
+        
+
+        marker_8b78e0d8590d1e3b55fa3bafc83ad8f2.bindPopup(popup_f785c2ef43d58ce7d28ba13973b3cb2c)
+        ;
+
+        
+    
+    
+            var marker_bfbdd9bedec71b28de71533fa6d6921a = L.marker(
+                [40.821058, -73.89213],
+                {}
+            ).addTo(marker_cluster_559beed95ddc255919c38364ca3abf50);
+        
+    
+            var icon_1c0ce395d45d10f6e35348fc42b25478 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_bfbdd9bedec71b28de71533fa6d6921a.setIcon(icon_1c0ce395d45d10f6e35348fc42b25478);
+        
+    
+        var popup_489561cb8e9cdbad0f1c250fb4282149 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_583d51f55b3238ee8bbd38a7c7596b4f = $(`<div id="html_583d51f55b3238ee8bbd38a7c7596b4f" style="width: 100.0%; height: 100.0%;">     <strong>Site ID:</strong> bx-02-111546<br>     <strong>Type:</strong> Link1.0<br>     <strong>Status:</strong> Live<br>     <strong>Address:</strong> 1025 East 163rd Street<br>     <strong>CB:</strong> 202     </div>`)[0];
+            popup_489561cb8e9cdbad0f1c250fb4282149.setContent(html_583d51f55b3238ee8bbd38a7c7596b4f);
+        
+
+        marker_bfbdd9bedec71b28de71533fa6d6921a.bindPopup(popup_489561cb8e9cdbad0f1c250fb4282149)
+        ;
+
+        
+    
+    
+            var marker_681987c2ce9f5b4e4e32821004ff12f0 = L.marker(
+                [40.828674, -73.896554],
+                {}
+            ).addTo(marker_cluster_559beed95ddc255919c38364ca3abf50);
+        
+    
+            var icon_210b10d30a04525b464ed57af5ecadf8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_681987c2ce9f5b4e4e32821004ff12f0.setIcon(icon_210b10d30a04525b464ed57af5ecadf8);
+        
+    
+        var popup_fc2de40fa68427afe6dc968d041913c6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7aaceac60f07feedc7dcc4a8fd761cde = $(`<div id="html_7aaceac60f07feedc7dcc4a8fd761cde" style="width: 100.0%; height: 100.0%;">     <strong>Site ID:</strong> bx-02-158315<br>     <strong>Type:</strong> Link1.0<br>     <strong>Status:</strong> Live<br>     <strong>Address:</strong> 1251 REV JAMES POLITE AVE<br>     <strong>CB:</strong> 202     </div>`)[0];
+            popup_fc2de40fa68427afe6dc968d041913c6.setContent(html_7aaceac60f07feedc7dcc4a8fd761cde);
+        
+
+        marker_681987c2ce9f5b4e4e32821004ff12f0.bindPopup(popup_fc2de40fa68427afe6dc968d041913c6)
+        ;
+
+        
+    
+    
+            var marker_ce903048cd27c706ebd572bcd420523c = L.marker(
+                [40.816692, -73.919637],
+                {}
+            ).addTo(marker_cluster_559beed95ddc255919c38364ca3abf50);
+        
+    
+            var icon_cdbf4589d2a2bf3653675910dfcd57a5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_ce903048cd27c706ebd572bcd420523c.setIcon(icon_cdbf4589d2a2bf3653675910dfcd57a5);
+        
+    
+        var popup_45ecb95b47e53391169aec942d2a65aa = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1b3323dbc56a5d1b2d96763b66722f6d = $(`<div id="html_1b3323dbc56a5d1b2d96763b66722f6d" style="width: 100.0%; height: 100.0%;">     <strong>Site ID:</strong> bx-01-123228<br>     <strong>Type:</strong> Link1.0<br>     <strong>Status:</strong> Live<br>     <strong>Address:</strong> 349 EAST 149 STREET<br>     <strong>CB:</strong> 201     </div>`)[0];
+            popup_45ecb95b47e53391169aec942d2a65aa.setContent(html_1b3323dbc56a5d1b2d96763b66722f6d);
+        
+
+        marker_ce903048cd27c706ebd572bcd420523c.bindPopup(popup_45ecb95b47e53391169aec942d2a65aa)
+        ;
+
+        
+    
+    
+            var marker_ac03b1d33eff15a7c6df87d451264d42 = L.marker(
+                [40.812557, -73.926244],
+                {}
+            ).addTo(marker_cluster_559beed95ddc255919c38364ca3abf50);
+        
+    
+            var icon_705baa4fa36ebbff00096e0bf0da474c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_ac03b1d33eff15a7c6df87d451264d42.setIcon(icon_705baa4fa36ebbff00096e0bf0da474c);
+        
+    
+        var popup_e963b6863f1c1480495ce71d57f3e4f1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9bd6ee36f312989030c91c08370fd7f1 = $(`<div id="html_9bd6ee36f312989030c91c08370fd7f1" style="width: 100.0%; height: 100.0%;">     <strong>Site ID:</strong> bx-01-146046<br>     <strong>Type:</strong> Link1.0<br>     <strong>Status:</strong> Live<br>     <strong>Address:</strong> 301 MORRIS AVENUE<br>     <strong>CB:</strong> 201     </div>`)[0];
+            popup_e963b6863f1c1480495ce71d57f3e4f1.setContent(html_9bd6ee36f312989030c91c08370fd7f1);
+        
+
+        marker_ac03b1d33eff15a7c6df87d451264d42.bindPopup(popup_e963b6863f1c1480495ce71d57f3e4f1)
+        ;
+
+        
+    
+    
+            var marker_bc83fb275d8da00ac549ab82cb795f8a = L.marker(
+                [40.814471, -73.912954],
+                {}
+            ).addTo(marker_cluster_559beed95ddc255919c38364ca3abf50);
+        
+    
+            var icon_3c32e2311742c649d7e9695154e92267 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_bc83fb275d8da00ac549ab82cb795f8a.setIcon(icon_3c32e2311742c649d7e9695154e92267);
+        
+    
+        var popup_0e801f16872773c26941dcdb7187bb90 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ce933d67f55f2feb7864ad468235e665 = $(`<div id="html_ce933d67f55f2feb7864ad468235e665" style="width: 100.0%; height: 100.0%;">     <strong>Site ID:</strong> bx-01-146045<br>     <strong>Type:</strong> Link1.0<br>     <strong>Status:</strong> Live<br>     <strong>Address:</strong> 563 ST. ANN'S AVENUE<br>     <strong>CB:</strong> 201     </div>`)[0];
+            popup_0e801f16872773c26941dcdb7187bb90.setContent(html_ce933d67f55f2feb7864ad468235e665);
+        
+
+        marker_bc83fb275d8da00ac549ab82cb795f8a.bindPopup(popup_0e801f16872773c26941dcdb7187bb90)
+        ;
+
+        
+    
+    
+            var marker_67e70ec6d0a475daefc2edbb528e1665 = L.marker(
+                [40.808293, -73.923332],
+                {}
+            ).addTo(marker_cluster_559beed95ddc255919c38364ca3abf50);
+        
+    
+            var icon_570fb0df81ed5d7775aa738246044204 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_67e70ec6d0a475daefc2edbb528e1665.setIcon(icon_570fb0df81ed5d7775aa738246044204);
+        
+    
+        var popup_90e6b602793865b68a19d8d4875cbefc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_95f0a58cac25371b1eb4d740ffc574cf = $(`<div id="html_95f0a58cac25371b1eb4d740ffc574cf" style="width: 100.0%; height: 100.0%;">     <strong>Site ID:</strong> bx-01-146086<br>     <strong>Type:</strong> Link1.0<br>     <strong>Status:</strong> Live<br>     <strong>Address:</strong> 216 WILLIS AVENUE<br>     <strong>CB:</strong> 201     </div>`)[0];
+            popup_90e6b602793865b68a19d8d4875cbefc.setContent(html_95f0a58cac25371b1eb4d740ffc574cf);
+        
+
+        marker_67e70ec6d0a475daefc2edbb528e1665.bindPopup(popup_90e6b602793865b68a19d8d4875cbefc)
+        ;
+
+        
+    
+    
+            var marker_428f19584775f805e27326d273fe648a = L.marker(
+                [40.8101, -73.902862],
+                {}
+            ).addTo(marker_cluster_559beed95ddc255919c38364ca3abf50);
+        
+    
+            var icon_5bc13fa6fe9bf8a8abb666961d19c3b0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_428f19584775f805e27326d273fe648a.setIcon(icon_5bc13fa6fe9bf8a8abb666961d19c3b0);
+        
+    
+        var popup_d342b0c76ae29c48366a33d75883676d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_87524ff8abc2d704800f5a2698a1bcf0 = $(`<div id="html_87524ff8abc2d704800f5a2698a1bcf0" style="width: 100.0%; height: 100.0%;">     <strong>Site ID:</strong> bx-02-145581<br>     <strong>Type:</strong> Link1.0<br>     <strong>Status:</strong> Live<br>     <strong>Address:</strong> 501 BRUCKNER BOULEVARD<br>     <strong>CB:</strong> 202     </div>`)[0];
+            popup_d342b0c76ae29c48366a33d75883676d.setContent(html_87524ff8abc2d704800f5a2698a1bcf0);
+        
+
+        marker_428f19584775f805e27326d273fe648a.bindPopup(popup_d342b0c76ae29c48366a33d75883676d)
+        ;
+
+        
+    
+    
+            var marker_6bca39bcc271e7ae82ef390a42cfe78b = L.marker(
+                [40.816188, -73.909917],
+                {}
+            ).addTo(marker_cluster_559beed95ddc255919c38364ca3abf50);
+        
+    
+            var icon_2d392b557322b7cb7ce55f6260a16bce = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_6bca39bcc271e7ae82ef390a42cfe78b.setIcon(icon_2d392b557322b7cb7ce55f6260a16bce);
+        
+    
+        var popup_3e7d29fc26d7d1d614d2f04361dca8bd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_743aecf4df20ecca13af583025026732 = $(`<div id="html_743aecf4df20ecca13af583025026732" style="width: 100.0%; height: 100.0%;">     <strong>Site ID:</strong> bx-01-142736<br>     <strong>Type:</strong> Link1.0<br>     <strong>Status:</strong> Live<br>     <strong>Address:</strong> 613 WESTCHESTER AVENUE<br>     <strong>CB:</strong> 201     </div>`)[0];
+            popup_3e7d29fc26d7d1d614d2f04361dca8bd.setContent(html_743aecf4df20ecca13af583025026732);
+        
+
+        marker_6bca39bcc271e7ae82ef390a42cfe78b.bindPopup(popup_3e7d29fc26d7d1d614d2f04361dca8bd)
+        ;
+
+        
+    
+    
+            var marker_6e4b9fe44a8a4c214a209ae369a7f2c1 = L.marker(
+                [40.808605, -73.886927],
+                {}
+            ).addTo(marker_cluster_559beed95ddc255919c38364ca3abf50);
+        
+    
+            var icon_2a052c37ff083a3598802c12f9cae563 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_6e4b9fe44a8a4c214a209ae369a7f2c1.setIcon(icon_2a052c37ff083a3598802c12f9cae563);
+        
+    
+        var popup_e4ec94fe7a8e65cf6e555ef46ffc3f69 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7ff4d41e14f61e9d05d5deb793aff34f = $(`<div id="html_7ff4d41e14f61e9d05d5deb793aff34f" style="width: 100.0%; height: 100.0%;">     <strong>Site ID:</strong> bx-02-156328<br>     <strong>Type:</strong> Link1.0<br>     <strong>Status:</strong> Live<br>     <strong>Address:</strong> 1251 EAST BAY AVENUE<br>     <strong>CB:</strong> 202     </div>`)[0];
+            popup_e4ec94fe7a8e65cf6e555ef46ffc3f69.setContent(html_7ff4d41e14f61e9d05d5deb793aff34f);
+        
+
+        marker_6e4b9fe44a8a4c214a209ae369a7f2c1.bindPopup(popup_e4ec94fe7a8e65cf6e555ef46ffc3f69)
+        ;
+
+        
+    
+    
+            var marker_9a56b5761d16815e0eb09b3e4f1c1319 = L.marker(
+                [40.821437, -73.912327],
+                {}
+            ).addTo(marker_cluster_559beed95ddc255919c38364ca3abf50);
+        
+    
+            var icon_8c695705cc97e4f2ce88d37a8f93f974 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_9a56b5761d16815e0eb09b3e4f1c1319.setIcon(icon_8c695705cc97e4f2ce88d37a8f93f974);
+        
+    
+        var popup_238e695bdd1030928d5f79e61c680765 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bd330c0cb8ac0067cc2279a81f9d8b87 = $(`<div id="html_bd330c0cb8ac0067cc2279a81f9d8b87" style="width: 100.0%; height: 100.0%;">     <strong>Site ID:</strong> bx-01-144251<br>     <strong>Type:</strong> Link1.0<br>     <strong>Status:</strong> Live<br>     <strong>Address:</strong> 3097 3 AVENUE<br>     <strong>CB:</strong> 201     </div>`)[0];
+            popup_238e695bdd1030928d5f79e61c680765.setContent(html_bd330c0cb8ac0067cc2279a81f9d8b87);
+        
+
+        marker_9a56b5761d16815e0eb09b3e4f1c1319.bindPopup(popup_238e695bdd1030928d5f79e61c680765)
+        ;
+
+        
+    
+    
+            var marker_61b86cac0be9b0564fa94e469e55440d = L.marker(
+                [40.804706, -73.912933],
+                {}
+            ).addTo(marker_cluster_559beed95ddc255919c38364ca3abf50);
+        
+    
+            var icon_ef5d68d5b9f78505aa8d0fa0f17fc577 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_61b86cac0be9b0564fa94e469e55440d.setIcon(icon_ef5d68d5b9f78505aa8d0fa0f17fc577);
+        
+    
+        var popup_df4fddd2db28499b9ab61bed519a99c0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e879f3925b2bf53d7d28fa80a47ce2ef = $(`<div id="html_e879f3925b2bf53d7d28fa80a47ce2ef" style="width: 100.0%; height: 100.0%;">     <strong>Site ID:</strong> bx-01-119017<br>     <strong>Type:</strong> Link1.0<br>     <strong>Status:</strong> Live<br>     <strong>Address:</strong> 710 EAST 138 STREET<br>     <strong>CB:</strong> 201     </div>`)[0];
+            popup_df4fddd2db28499b9ab61bed519a99c0.setContent(html_e879f3925b2bf53d7d28fa80a47ce2ef);
+        
+
+        marker_61b86cac0be9b0564fa94e469e55440d.bindPopup(popup_df4fddd2db28499b9ab61bed519a99c0)
+        ;
+
+        
+    
+    
+            var marker_b562d6ab03f03b907dc1b05371b4cd96 = L.marker(
+                [40.812441, -73.92925],
+                {}
+            ).addTo(marker_cluster_559beed95ddc255919c38364ca3abf50);
+        
+    
+            var icon_b8fd38e638b3197cd8a4dbaca911d8d4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_b562d6ab03f03b907dc1b05371b4cd96.setIcon(icon_b8fd38e638b3197cd8a4dbaca911d8d4);
+        
+    
+        var popup_e8cbe4b8672678a0bd4e4c5a18cb933a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6660ef2a836e11154af8f4dcb3fc3ab6 = $(`<div id="html_6660ef2a836e11154af8f4dcb3fc3ab6" style="width: 100.0%; height: 100.0%;">     <strong>Site ID:</strong> bx-01-145917<br>     <strong>Type:</strong> Link1.0<br>     <strong>Status:</strong> Live<br>     <strong>Address:</strong> 200 EAST 138 STREET<br>     <strong>CB:</strong> 201     </div>`)[0];
+            popup_e8cbe4b8672678a0bd4e4c5a18cb933a.setContent(html_6660ef2a836e11154af8f4dcb3fc3ab6);
+        
+
+        marker_b562d6ab03f03b907dc1b05371b4cd96.bindPopup(popup_e8cbe4b8672678a0bd4e4c5a18cb933a)
+        ;
+
+        
+    
+    
+            var marker_c6e428be737d9722f6346a3ec0c34638 = L.marker(
+                [40.817265, -73.897988],
+                {}
+            ).addTo(marker_cluster_559beed95ddc255919c38364ca3abf50);
+        
+    
+            var icon_eef48365b84d38dff0f1bc82d9c7c550 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_c6e428be737d9722f6346a3ec0c34638.setIcon(icon_eef48365b84d38dff0f1bc82d9c7c550);
+        
+    
+        var popup_f17158670adc79322d4eab9057fdba7d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f203bbe0fa1d7df8d8c2f391d65b9e94 = $(`<div id="html_f203bbe0fa1d7df8d8c2f391d65b9e94" style="width: 100.0%; height: 100.0%;">     <strong>Site ID:</strong> bx-02-144220<br>     <strong>Type:</strong> Link5G_Ad<br>     <strong>Status:</strong> Live<br>     <strong>Address:</strong> 783 BECK STREET<br>     <strong>CB:</strong> 202     </div>`)[0];
+            popup_f17158670adc79322d4eab9057fdba7d.setContent(html_f203bbe0fa1d7df8d8c2f391d65b9e94);
+        
+
+        marker_c6e428be737d9722f6346a3ec0c34638.bindPopup(popup_f17158670adc79322d4eab9057fdba7d)
+        ;
+
+        
+    
+    
+            var marker_dcf6d53730a273d9978621f0d9f2d9b1 = L.marker(
+                [40.81738, -73.917078],
+                {}
+            ).addTo(marker_cluster_559beed95ddc255919c38364ca3abf50);
+        
+    
+            var icon_6d7360d4a704fa856a2107a1c912416e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_dcf6d53730a273d9978621f0d9f2d9b1.setIcon(icon_6d7360d4a704fa856a2107a1c912416e);
+        
+    
+        var popup_82b497eeb04d9c86cea02b2bb7d03574 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2f009b96da6ccfa84c378c92a35058d4 = $(`<div id="html_2f009b96da6ccfa84c378c92a35058d4" style="width: 100.0%; height: 100.0%;">     <strong>Site ID:</strong> bx-01-146066<br>     <strong>Type:</strong> Link1.0<br>     <strong>Status:</strong> Live<br>     <strong>Address:</strong> 610 MELROSE AVENUE<br>     <strong>CB:</strong> 201     </div>`)[0];
+            popup_82b497eeb04d9c86cea02b2bb7d03574.setContent(html_2f009b96da6ccfa84c378c92a35058d4);
+        
+
+        marker_dcf6d53730a273d9978621f0d9f2d9b1.bindPopup(popup_82b497eeb04d9c86cea02b2bb7d03574)
+        ;
+
+        
+    
+    
+            var marker_23e7dbd2ce1fc4db884355c3bda7f458 = L.marker(
+                [40.808927, -73.882082],
+                {}
+            ).addTo(marker_cluster_559beed95ddc255919c38364ca3abf50);
+        
+    
+            var icon_b7ae0e7b20fbe8573e9881b2074afc8d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_23e7dbd2ce1fc4db884355c3bda7f458.setIcon(icon_b7ae0e7b20fbe8573e9881b2074afc8d);
+        
+    
+        var popup_94e35312c1c3d925ac34ccd0207711ad = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c0b98dd1ce2bcfefe4ff41b6be3db9c2 = $(`<div id="html_c0b98dd1ce2bcfefe4ff41b6be3db9c2" style="width: 100.0%; height: 100.0%;">     <strong>Site ID:</strong> bx-02-145582<br>     <strong>Type:</strong> Link1.0<br>     <strong>Status:</strong> Live<br>     <strong>Address:</strong> 1360 EAST BAY AVENUE<br>     <strong>CB:</strong> 202     </div>`)[0];
+            popup_94e35312c1c3d925ac34ccd0207711ad.setContent(html_c0b98dd1ce2bcfefe4ff41b6be3db9c2);
+        
+
+        marker_23e7dbd2ce1fc4db884355c3bda7f458.bindPopup(popup_94e35312c1c3d925ac34ccd0207711ad)
+        ;
+
+        
+    
+    
+            var marker_cd2558865edc8396b02fa8218c305278 = L.marker(
+                [40.834973, -73.845696],
+                {}
+            ).addTo(marker_cluster_559beed95ddc255919c38364ca3abf50);
+        
+    
+            var icon_2bbb4979a82998e35cc8529b53581a0c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_cd2558865edc8396b02fa8218c305278.setIcon(icon_2bbb4979a82998e35cc8529b53581a0c);
+        
+    
+        var popup_468964f35a74be73a9ec5cbc1a0685f1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f8cbc5380a1062650f85deea88c88190 = $(`<div id="html_f8cbc5380a1062650f85deea88c88190" style="width: 100.0%; height: 100.0%;">     <strong>Site ID:</strong> bx-10-160009<br>     <strong>Type:</strong> Link5G_Ad<br>     <strong>Status:</strong> Live<br>     <strong>Address:</strong> 2365 WATERBURY AVENUE<br>     <strong>CB:</strong> 210     </div>`)[0];
+            popup_468964f35a74be73a9ec5cbc1a0685f1.setContent(html_f8cbc5380a1062650f85deea88c88190);
+        
+
+        marker_cd2558865edc8396b02fa8218c305278.bindPopup(popup_468964f35a74be73a9ec5cbc1a0685f1)
+        ;
+
+        
+    
+    
+            var marker_2eeed092258e0a679ae87e294e431560 = L.marker(
+                [40.817235, -73.915829],
+                {}
+            ).addTo(marker_cluster_559beed95ddc255919c38364ca3abf50);
+        
+    
+            var icon_2625bfedd027ce12a893b4b71397d183 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_2eeed092258e0a679ae87e294e431560.setIcon(icon_2625bfedd027ce12a893b4b71397d183);
+        
+    
+        var popup_1f9c1bf5406907795eb949c0afc68cde = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f401cddf33f07d0312f9fcfb9d6a4a11 = $(`<div id="html_f401cddf33f07d0312f9fcfb9d6a4a11" style="width: 100.0%; height: 100.0%;">     <strong>Site ID:</strong> bx-01-118944<br>     <strong>Type:</strong> Link1.0<br>     <strong>Status:</strong> Live<br>     <strong>Address:</strong> 2914 3 AVENUE<br>     <strong>CB:</strong> 201     </div>`)[0];
+            popup_1f9c1bf5406907795eb949c0afc68cde.setContent(html_f401cddf33f07d0312f9fcfb9d6a4a11);
+        
+
+        marker_2eeed092258e0a679ae87e294e431560.bindPopup(popup_1f9c1bf5406907795eb949c0afc68cde)
+        ;
+
+        
+    
+    
+            var marker_4eb73da2bef735f23b2c0db85b9df22a = L.marker(
+                [40.823945, -73.895682],
+                {}
+            ).addTo(marker_cluster_559beed95ddc255919c38364ca3abf50);
+        
+    
+            var icon_fd75e5194cf74a7ac52e556ef473d3c4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_4eb73da2bef735f23b2c0db85b9df22a.setIcon(icon_fd75e5194cf74a7ac52e556ef473d3c4);
+        
+    
+        var popup_22c2165c5df5e86b1b98fabfeb905297 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_af8c778b46664fd692b18d9bd2989083 = $(`<div id="html_af8c778b46664fd692b18d9bd2989083" style="width: 100.0%; height: 100.0%;">     <strong>Site ID:</strong> bx-02-152585<br>     <strong>Type:</strong> Link1.0<br>     <strong>Status:</strong> Live<br>     <strong>Address:</strong> 1020 KELLY STREET<br>     <strong>CB:</strong> 202     </div>`)[0];
+            popup_22c2165c5df5e86b1b98fabfeb905297.setContent(html_af8c778b46664fd692b18d9bd2989083);
+        
+
+        marker_4eb73da2bef735f23b2c0db85b9df22a.bindPopup(popup_22c2165c5df5e86b1b98fabfeb905297)
+        ;
+
+        
+    
+    
+            var marker_ec062eed8b46f33df0a2c63e84b92c99 = L.marker(
+                [40.820914, -73.890458],
+                {}
+            ).addTo(marker_cluster_559beed95ddc255919c38364ca3abf50);
+        
+    
+            var icon_93eba775abc4b3ac8b81cbd5f8c5a8dc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_ec062eed8b46f33df0a2c63e84b92c99.setIcon(icon_93eba775abc4b3ac8b81cbd5f8c5a8dc);
+        
+    
+        var popup_e56273ba1065e5f1eab67c6db4868d9d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_de18be222adddca3a9a3b70ea7f812b9 = $(`<div id="html_de18be222adddca3a9a3b70ea7f812b9" style="width: 100.0%; height: 100.0%;">     <strong>Site ID:</strong> bx-02-119037<br>     <strong>Type:</strong> Link1.0<br>     <strong>Status:</strong> Removed Pending Reinstall<br>     <strong>Address:</strong> 1055 EAST 163 STREET<br>     <strong>CB:</strong> 202     </div>`)[0];
+            popup_e56273ba1065e5f1eab67c6db4868d9d.setContent(html_de18be222adddca3a9a3b70ea7f812b9);
+        
+
+        marker_ec062eed8b46f33df0a2c63e84b92c99.bindPopup(popup_e56273ba1065e5f1eab67c6db4868d9d)
+        ;
+
+        
+    
+    
+            var marker_1bf90dcaebe32862f3859351098f468d = L.marker(
+                [40.807108, -73.918343],
+                {}
+            ).addTo(marker_cluster_559beed95ddc255919c38364ca3abf50);
+        
+    
+            var icon_b9a1ad7bdf6a7176774014ed921e8e23 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_1bf90dcaebe32862f3859351098f468d.setIcon(icon_b9a1ad7bdf6a7176774014ed921e8e23);
+        
+    
+        var popup_0f5ab73c36e8d04318c45d29619c8365 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_96078e4ca6dcc0f143251335d760314f = $(`<div id="html_96078e4ca6dcc0f143251335d760314f" style="width: 100.0%; height: 100.0%;">     <strong>Site ID:</strong> bx-01-146060<br>     <strong>Type:</strong> Link1.0<br>     <strong>Status:</strong> Live<br>     <strong>Address:</strong> 530 EAST 138 STREET<br>     <strong>CB:</strong> 201     </div>`)[0];
+            popup_0f5ab73c36e8d04318c45d29619c8365.setContent(html_96078e4ca6dcc0f143251335d760314f);
+        
+
+        marker_1bf90dcaebe32862f3859351098f468d.bindPopup(popup_0f5ab73c36e8d04318c45d29619c8365)
+        ;
+
+        
+    
+    
+            var marker_f4322c9ff68d48d408b4d5b617190334 = L.marker(
+                [40.81431, -73.930217],
+                {}
+            ).addTo(marker_cluster_559beed95ddc255919c38364ca3abf50);
+        
+    
+            var icon_4ce3db17c77970cd207431184cb6cbe9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_f4322c9ff68d48d408b4d5b617190334.setIcon(icon_4ce3db17c77970cd207431184cb6cbe9);
+        
+    
+        var popup_58647532d85761a46da4d8ef481bb956 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e3d76243ccf6ca1833b6982219a63c52 = $(`<div id="html_e3d76243ccf6ca1833b6982219a63c52" style="width: 100.0%; height: 100.0%;">     <strong>Site ID:</strong> bx-01-145842<br>     <strong>Type:</strong> Link1.0<br>     <strong>Status:</strong> Live<br>     <strong>Address:</strong> 261 WALTON AVENUE<br>     <strong>CB:</strong> 201     </div>`)[0];
+            popup_58647532d85761a46da4d8ef481bb956.setContent(html_e3d76243ccf6ca1833b6982219a63c52);
+        
+
+        marker_f4322c9ff68d48d408b4d5b617190334.bindPopup(popup_58647532d85761a46da4d8ef481bb956)
+        ;
+
+        
+    
+    
+            var marker_15cf6bbc48d27d775301f34138b8ab63 = L.marker(
+                [40.818769, -73.91645],
+                {}
+            ).addTo(marker_cluster_559beed95ddc255919c38364ca3abf50);
+        
+    
+            var icon_5dc743aeb63d50345a3c31514991e564 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_15cf6bbc48d27d775301f34138b8ab63.setIcon(icon_5dc743aeb63d50345a3c31514991e564);
+        
+    
+        var popup_e0e533b6bd335cfb2401c88e58af7633 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3f578caa535b0dc1ce87c97959370528 = $(`<div id="html_3f578caa535b0dc1ce87c97959370528" style="width: 100.0%; height: 100.0%;">     <strong>Site ID:</strong> bx-01-111740<br>     <strong>Type:</strong> Link1.0<br>     <strong>Status:</strong> Live<br>     <strong>Address:</strong> 652A MELROSE AVENUE<br>     <strong>CB:</strong> 201     </div>`)[0];
+            popup_e0e533b6bd335cfb2401c88e58af7633.setContent(html_3f578caa535b0dc1ce87c97959370528);
+        
+
+        marker_15cf6bbc48d27d775301f34138b8ab63.bindPopup(popup_e0e533b6bd335cfb2401c88e58af7633)
+        ;
+
+        
+    
+    
+            var marker_b7fa7be855c6f70f7f55de899cd0e990 = L.marker(
+                [40.819709, -73.901295],
+                {}
+            ).addTo(marker_cluster_559beed95ddc255919c38364ca3abf50);
+        
+    
+            var icon_4d720dc9bd00f6e0ded3bdfb1e867081 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_b7fa7be855c6f70f7f55de899cd0e990.setIcon(icon_4d720dc9bd00f6e0ded3bdfb1e867081);
+        
+    
+        var popup_b5267a29407b2ed8fd89716896337470 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cbf0bf28d1e2135b8f4ba072127a6f38 = $(`<div id="html_cbf0bf28d1e2135b8f4ba072127a6f38" style="width: 100.0%; height: 100.0%;">     <strong>Site ID:</strong> bx-02-119034<br>     <strong>Type:</strong> Link1.0<br>     <strong>Status:</strong> Live<br>     <strong>Address:</strong> 840 WESTCHESTER AVENUE<br>     <strong>CB:</strong> 202     </div>`)[0];
+            popup_b5267a29407b2ed8fd89716896337470.setContent(html_cbf0bf28d1e2135b8f4ba072127a6f38);
+        
+
+        marker_b7fa7be855c6f70f7f55de899cd0e990.bindPopup(popup_b5267a29407b2ed8fd89716896337470)
+        ;
+
+        
+    
+    
+            var marker_d053e6327baf4b1383146782352fc54f = L.marker(
+                [40.812127, -73.920552],
+                {}
+            ).addTo(marker_cluster_559beed95ddc255919c38364ca3abf50);
+        
+    
+            var icon_29b09a9f59d0cb0958bbe81e667d5f1e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_d053e6327baf4b1383146782352fc54f.setIcon(icon_29b09a9f59d0cb0958bbe81e667d5f1e);
+        
+    
+        var popup_a0c4a55dc1c1084fe37ff1121a441ffc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d3d54e5b25b541868b6057ebc50abf7e = $(`<div id="html_d3d54e5b25b541868b6057ebc50abf7e" style="width: 100.0%; height: 100.0%;">     <strong>Site ID:</strong> bx-01-146023<br>     <strong>Type:</strong> Link1.0<br>     <strong>Status:</strong> Live<br>     <strong>Address:</strong> 374 WILLIS AVENUE<br>     <strong>CB:</strong> 201     </div>`)[0];
+            popup_a0c4a55dc1c1084fe37ff1121a441ffc.setContent(html_d3d54e5b25b541868b6057ebc50abf7e);
+        
+
+        marker_d053e6327baf4b1383146782352fc54f.bindPopup(popup_a0c4a55dc1c1084fe37ff1121a441ffc)
+        ;
+
+        
+    
+    
+            var marker_f44b39383a83e387e66bd2929e277cd0 = L.marker(
+                [40.81856, -73.9143],
+                {}
+            ).addTo(marker_cluster_559beed95ddc255919c38364ca3abf50);
+        
+    
+            var icon_17a24554ca27b19af7dd9177bdc07943 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_f44b39383a83e387e66bd2929e277cd0.setIcon(icon_17a24554ca27b19af7dd9177bdc07943);
+        
+    
+        var popup_7d539db0e33ded45c4a7c432a733b768 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a54c454d9b9298df02e1c4f980a3193a = $(`<div id="html_a54c454d9b9298df02e1c4f980a3193a" style="width: 100.0%; height: 100.0%;">     <strong>Site ID:</strong> bx-01-123212<br>     <strong>Type:</strong> Link1.0<br>     <strong>Status:</strong> Live<br>     <strong>Address:</strong> 2976A 3 AVENUE<br>     <strong>CB:</strong> 201     </div>`)[0];
+            popup_7d539db0e33ded45c4a7c432a733b768.setContent(html_a54c454d9b9298df02e1c4f980a3193a);
+        
+
+        marker_f44b39383a83e387e66bd2929e277cd0.bindPopup(popup_7d539db0e33ded45c4a7c432a733b768)
+        ;
+
+        
+    
+    
+            var marker_380d950a8a41aceae1d6ddca39cb6175 = L.marker(
+                [40.817446, -73.915574],
+                {}
+            ).addTo(marker_cluster_559beed95ddc255919c38364ca3abf50);
+        
+    
+            var icon_79adb7c705625dddcff40227667beab5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_380d950a8a41aceae1d6ddca39cb6175.setIcon(icon_79adb7c705625dddcff40227667beab5);
+        
+    
+        var popup_2ddb1977069e1646219e9aee38ac207a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_26cc19b074c248a6c04c95fa2e608823 = $(`<div id="html_26cc19b074c248a6c04c95fa2e608823" style="width: 100.0%; height: 100.0%;">     <strong>Site ID:</strong> bx-01-118942<br>     <strong>Type:</strong> Link1.0<br>     <strong>Status:</strong> Live<br>     <strong>Address:</strong> 2922 3 AVENUE<br>     <strong>CB:</strong> 201     </div>`)[0];
+            popup_2ddb1977069e1646219e9aee38ac207a.setContent(html_26cc19b074c248a6c04c95fa2e608823);
+        
+
+        marker_380d950a8a41aceae1d6ddca39cb6175.bindPopup(popup_2ddb1977069e1646219e9aee38ac207a)
+        ;
+
+        
+    
+    
+            var marker_1644defa0a3eb8cd8f887c0b5ce3c584 = L.marker(
+                [40.812079, -73.92659],
+                {}
+            ).addTo(marker_cluster_559beed95ddc255919c38364ca3abf50);
+        
+    
+            var icon_7d2587f71f2ea2548e940cb5cc7261cc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_1644defa0a3eb8cd8f887c0b5ce3c584.setIcon(icon_7d2587f71f2ea2548e940cb5cc7261cc);
+        
+    
+        var popup_415a21e10c8c72ed3c54ba988b7a1f49 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_aca7a28e4c3140feeda01c8336c2bdc3 = $(`<div id="html_aca7a28e4c3140feeda01c8336c2bdc3" style="width: 100.0%; height: 100.0%;">     <strong>Site ID:</strong> bx-01-146049<br>     <strong>Type:</strong> Link1.0<br>     <strong>Status:</strong> Live<br>     <strong>Address:</strong> 289 MORRIS AVENUE<br>     <strong>CB:</strong> 201     </div>`)[0];
+            popup_415a21e10c8c72ed3c54ba988b7a1f49.setContent(html_aca7a28e4c3140feeda01c8336c2bdc3);
+        
+
+        marker_1644defa0a3eb8cd8f887c0b5ce3c584.bindPopup(popup_415a21e10c8c72ed3c54ba988b7a1f49)
+        ;
+
+        
+    
+    
+            var marker_18e7032d7d50c4d5952cd71b7505cc9c = L.marker(
+                [40.82668, -73.887763],
+                {}
+            ).addTo(marker_cluster_559beed95ddc255919c38364ca3abf50);
+        
+    
+            var icon_31d2521fff7ef21e385f07a566d5c2dc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_18e7032d7d50c4d5952cd71b7505cc9c.setIcon(icon_31d2521fff7ef21e385f07a566d5c2dc);
+        
+    
+        var popup_8f9807cab703d5a2af53dcaf69262cd7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2dd228ce537a09db64fb0d2ecc84bc14 = $(`<div id="html_2dd228ce537a09db64fb0d2ecc84bc14" style="width: 100.0%; height: 100.0%;">     <strong>Site ID:</strong> bx-02-100042<br>     <strong>Type:</strong> Link5G_Ad<br>     <strong>Status:</strong> Live<br>     <strong>Address:</strong> 1102 LONGFELLOW AVENUE<br>     <strong>CB:</strong> 202     </div>`)[0];
+            popup_8f9807cab703d5a2af53dcaf69262cd7.setContent(html_2dd228ce537a09db64fb0d2ecc84bc14);
+        
+
+        marker_18e7032d7d50c4d5952cd71b7505cc9c.bindPopup(popup_8f9807cab703d5a2af53dcaf69262cd7)
+        ;
+
+        
+    
+    
+            var marker_a19a3ee55450f3e827f8d89e2771236a = L.marker(
+                [40.809714, -73.880704],
+                {}
+            ).addTo(marker_cluster_559beed95ddc255919c38364ca3abf50);
+        
+    
+            var icon_fd1cbd3bb1d59e39b32c9da226c31efd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_a19a3ee55450f3e827f8d89e2771236a.setIcon(icon_fd1cbd3bb1d59e39b32c9da226c31efd);
+        
+    
+        var popup_a055b216833969390d6bb8e210f8cc2d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4ea8f0c4fa05ba2db007e20ddc14e64d = $(`<div id="html_4ea8f0c4fa05ba2db007e20ddc14e64d" style="width: 100.0%; height: 100.0%;">     <strong>Site ID:</strong> bx-02-145542<br>     <strong>Type:</strong> Link1.0<br>     <strong>Status:</strong> Live<br>     <strong>Address:</strong> 402 HUNTS POINT AVENUE<br>     <strong>CB:</strong> 202     </div>`)[0];
+            popup_a055b216833969390d6bb8e210f8cc2d.setContent(html_4ea8f0c4fa05ba2db007e20ddc14e64d);
+        
+
+        marker_a19a3ee55450f3e827f8d89e2771236a.bindPopup(popup_a055b216833969390d6bb8e210f8cc2d)
+        ;
+
+        
+    
+    
+            var marker_a16e2a58642bd6664d2da77227881d03 = L.marker(
+                [40.819328, -73.88947],
+                {}
+            ).addTo(marker_cluster_559beed95ddc255919c38364ca3abf50);
+        
+    
+            var icon_ac3fd6a24b04fa3d8532db0bed2a27f9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_a16e2a58642bd6664d2da77227881d03.setIcon(icon_ac3fd6a24b04fa3d8532db0bed2a27f9);
+        
+    
+        var popup_7fcd0ed618e0bb01d484681fb4512ac8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_eca87e4359a8f4c4bee504675064247c = $(`<div id="html_eca87e4359a8f4c4bee504675064247c" style="width: 100.0%; height: 100.0%;">     <strong>Site ID:</strong> bx-02-145646<br>     <strong>Type:</strong> Link1.0<br>     <strong>Status:</strong> Live<br>     <strong>Address:</strong> 890 HUNTS POINT AVENUE<br>     <strong>CB:</strong> 202     </div>`)[0];
+            popup_7fcd0ed618e0bb01d484681fb4512ac8.setContent(html_eca87e4359a8f4c4bee504675064247c);
+        
+
+        marker_a16e2a58642bd6664d2da77227881d03.bindPopup(popup_7fcd0ed618e0bb01d484681fb4512ac8)
+        ;
+
+        
+    
+    
+            var marker_7328aae8996b9e5d11db968dfadd1759 = L.marker(
+                [40.821338, -73.896767],
+                {}
+            ).addTo(marker_cluster_559beed95ddc255919c38364ca3abf50);
+        
+    
+            var icon_65c23584ead6d9af27b5e06f007d8ad7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_7328aae8996b9e5d11db968dfadd1759.setIcon(icon_65c23584ead6d9af27b5e06f007d8ad7);
+        
+    
+        var popup_96eaf6ba646703bb018edb16c8fbed25 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4216433bac62774b95f10aeb5fd96006 = $(`<div id="html_4216433bac62774b95f10aeb5fd96006" style="width: 100.0%; height: 100.0%;">     <strong>Site ID:</strong> bx-02-159084<br>     <strong>Type:</strong> Link1.0<br>     <strong>Status:</strong> Live<br>     <strong>Address:</strong> 944A INTERVALE AVENUE<br>     <strong>CB:</strong> 202     </div>`)[0];
+            popup_96eaf6ba646703bb018edb16c8fbed25.setContent(html_4216433bac62774b95f10aeb5fd96006);
+        
+
+        marker_7328aae8996b9e5d11db968dfadd1759.bindPopup(popup_96eaf6ba646703bb018edb16c8fbed25)
+        ;
+
+        
+    
+    
+            var marker_5ff39302955fdf6ac3c73c8bdbbf3d82 = L.marker(
+                [40.81886, -73.914242],
+                {}
+            ).addTo(marker_cluster_559beed95ddc255919c38364ca3abf50);
+        
+    
+            var icon_5656f4e34d351c3d293826ff219a7b3f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_5ff39302955fdf6ac3c73c8bdbbf3d82.setIcon(icon_5656f4e34d351c3d293826ff219a7b3f);
+        
+    
+        var popup_fea384bfac28f4d0a2c3d9cf90d5b084 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fa314cb9ef26a8c4853df79bf340b93f = $(`<div id="html_fa314cb9ef26a8c4853df79bf340b93f" style="width: 100.0%; height: 100.0%;">     <strong>Site ID:</strong> bx-01-123217<br>     <strong>Type:</strong> Link1.0<br>     <strong>Status:</strong> Live<br>     <strong>Address:</strong> 2991 3 AVENUE<br>     <strong>CB:</strong> 201     </div>`)[0];
+            popup_fea384bfac28f4d0a2c3d9cf90d5b084.setContent(html_fa314cb9ef26a8c4853df79bf340b93f);
+        
+
+        marker_5ff39302955fdf6ac3c73c8bdbbf3d82.bindPopup(popup_fea384bfac28f4d0a2c3d9cf90d5b084)
+        ;
+
+        
+    
+    
+            var marker_deaaa50afff6a8401b466c5b9784a7ef = L.marker(
+                [40.824938, -73.891636],
+                {}
+            ).addTo(marker_cluster_559beed95ddc255919c38364ca3abf50);
+        
+    
+            var icon_bbfa4dcb19466b4c5f69fbeda53cc2ac = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_deaaa50afff6a8401b466c5b9784a7ef.setIcon(icon_bbfa4dcb19466b4c5f69fbeda53cc2ac);
+        
+    
+        var popup_123663ad5968fa71ecdfcf0aa7aa1252 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_54e1e070790bb862ee4ac1ea58554682 = $(`<div id="html_54e1e070790bb862ee4ac1ea58554682" style="width: 100.0%; height: 100.0%;">     <strong>Site ID:</strong> bx-02-123197<br>     <strong>Type:</strong> Link1.0<br>     <strong>Status:</strong> Live<br>     <strong>Address:</strong> 1041 WEST FARMS ROAD<br>     <strong>CB:</strong> 202     </div>`)[0];
+            popup_123663ad5968fa71ecdfcf0aa7aa1252.setContent(html_54e1e070790bb862ee4ac1ea58554682);
+        
+
+        marker_deaaa50afff6a8401b466c5b9784a7ef.bindPopup(popup_123663ad5968fa71ecdfcf0aa7aa1252)
+        ;
+
+        
+    
+    
+            var marker_824cb6d72c073143ace3c05ff0d87e64 = L.marker(
+                [40.814394, -73.915181],
+                {}
+            ).addTo(marker_cluster_559beed95ddc255919c38364ca3abf50);
+        
+    
+            var icon_a757f27d7333bc6a87ff3ad23f04f8e2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_824cb6d72c073143ace3c05ff0d87e64.setIcon(icon_a757f27d7333bc6a87ff3ad23f04f8e2);
+        
+    
+        var popup_54afb1c7ba443e383791f8e91bc607b8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_48673d046c7f96be455226d34a50d847 = $(`<div id="html_48673d046c7f96be455226d34a50d847" style="width: 100.0%; height: 100.0%;">     <strong>Site ID:</strong> bx-01-146056<br>     <strong>Type:</strong> Link1.0<br>     <strong>Status:</strong> Live<br>     <strong>Address:</strong> 520 BROOK AVENUE<br>     <strong>CB:</strong> 201     </div>`)[0];
+            popup_54afb1c7ba443e383791f8e91bc607b8.setContent(html_48673d046c7f96be455226d34a50d847);
+        
+
+        marker_824cb6d72c073143ace3c05ff0d87e64.bindPopup(popup_54afb1c7ba443e383791f8e91bc607b8)
+        ;
+
+        
+    
+    
+            var marker_bdf77ab1235c1657f665e5c55124ab35 = L.marker(
+                [40.81474, -73.886191],
+                {}
+            ).addTo(marker_cluster_559beed95ddc255919c38364ca3abf50);
+        
+    
+            var icon_cc31babdc300b4bbb13015ff7274ebc1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_bdf77ab1235c1657f665e5c55124ab35.setIcon(icon_cc31babdc300b4bbb13015ff7274ebc1);
+        
+    
+        var popup_9a30707548866ef3556944c6f32cc7b7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a8dcdb75575cc2abffe7a7c32e922d66 = $(`<div id="html_a8dcdb75575cc2abffe7a7c32e922d66" style="width: 100.0%; height: 100.0%;">     <strong>Site ID:</strong> bx-02-106058<br>     <strong>Type:</strong> Link5G_Ad<br>     <strong>Status:</strong> Live<br>     <strong>Address:</strong> 700 FAILE STREET<br>     <strong>CB:</strong> 202     </div>`)[0];
+            popup_9a30707548866ef3556944c6f32cc7b7.setContent(html_a8dcdb75575cc2abffe7a7c32e922d66);
+        
+
+        marker_bdf77ab1235c1657f665e5c55124ab35.bindPopup(popup_9a30707548866ef3556944c6f32cc7b7)
+        ;
+
+        
+    
+    
+            var marker_97dcfe94a5b2ec20da2c624dbab6c71a = L.marker(
+                [40.810159, -73.927886],
+                {}
+            ).addTo(marker_cluster_559beed95ddc255919c38364ca3abf50);
+        
+    
+            var icon_5f4ad9d46acd26255e35ba03d4749d65 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_97dcfe94a5b2ec20da2c624dbab6c71a.setIcon(icon_5f4ad9d46acd26255e35ba03d4749d65);
+        
+    
+        var popup_fd252cff5b1b06233ddbfa4f3f1bd326 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1959ae54eef85e08b431041c48f547a0 = $(`<div id="html_1959ae54eef85e08b431041c48f547a0" style="width: 100.0%; height: 100.0%;">     <strong>Site ID:</strong> bx-01-145916<br>     <strong>Type:</strong> Link1.0<br>     <strong>Status:</strong> Live<br>     <strong>Address:</strong> 197 LINCOLN AVENUE<br>     <strong>CB:</strong> 201     </div>`)[0];
+            popup_fd252cff5b1b06233ddbfa4f3f1bd326.setContent(html_1959ae54eef85e08b431041c48f547a0);
+        
+
+        marker_97dcfe94a5b2ec20da2c624dbab6c71a.bindPopup(popup_fd252cff5b1b06233ddbfa4f3f1bd326)
+        ;
+
+        
+    
+    
+            var marker_58675247c7186e0f06c5a43e0e261704 = L.marker(
+                [40.812943, -73.904111],
+                {}
+            ).addTo(marker_cluster_559beed95ddc255919c38364ca3abf50);
+        
+    
+            var icon_4b6f6bb055d751f1a47fec7c8e6bd9f8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_58675247c7186e0f06c5a43e0e261704.setIcon(icon_4b6f6bb055d751f1a47fec7c8e6bd9f8);
+        
+    
+        var popup_43e77ae92b2e550e39667eff1ab40102 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4e4058546deefc0ed0db695958059da0 = $(`<div id="html_4e4058546deefc0ed0db695958059da0" style="width: 100.0%; height: 100.0%;">     <strong>Site ID:</strong> bx-02-160005<br>     <strong>Type:</strong> Link5G_NonAd<br>     <strong>Status:</strong> Live<br>     <strong>Address:</strong> 576 PROSPECT AVENUE<br>     <strong>CB:</strong> 202     </div>`)[0];
+            popup_43e77ae92b2e550e39667eff1ab40102.setContent(html_4e4058546deefc0ed0db695958059da0);
+        
+
+        marker_58675247c7186e0f06c5a43e0e261704.bindPopup(popup_43e77ae92b2e550e39667eff1ab40102)
+        ;
+
+        
+    
+    
+            var marker_0da6aab5ed7f571a4dac4bb4fb4bf1cd = L.marker(
+                [40.813575, -73.919491],
+                {}
+            ).addTo(marker_cluster_559beed95ddc255919c38364ca3abf50);
+        
+    
+            var icon_21ac594dfe7f6e92e7ceb1584368ac14 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_0da6aab5ed7f571a4dac4bb4fb4bf1cd.setIcon(icon_21ac594dfe7f6e92e7ceb1584368ac14);
+        
+    
+        var popup_2c74bfd6a722e06e9ef8ebe02bd73d02 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3e0350980055fba9dd67ac072f6d7f84 = $(`<div id="html_3e0350980055fba9dd67ac072f6d7f84" style="width: 100.0%; height: 100.0%;">     <strong>Site ID:</strong> bx-01-144892<br>     <strong>Type:</strong> Link1.0<br>     <strong>Status:</strong> Live<br>     <strong>Address:</strong> 442 WILLIS AVENUE<br>     <strong>CB:</strong> 201     </div>`)[0];
+            popup_2c74bfd6a722e06e9ef8ebe02bd73d02.setContent(html_3e0350980055fba9dd67ac072f6d7f84);
+        
+
+        marker_0da6aab5ed7f571a4dac4bb4fb4bf1cd.bindPopup(popup_2c74bfd6a722e06e9ef8ebe02bd73d02)
+        ;
+
+        
+    
+    
+            var marker_0d0c1f834488b098d95b694ff2be8629 = L.marker(
+                [40.822338, -73.909427],
+                {}
+            ).addTo(marker_cluster_559beed95ddc255919c38364ca3abf50);
+        
+    
+            var icon_3c326504be84497f7b5e81b159c43441 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_0d0c1f834488b098d95b694ff2be8629.setIcon(icon_3c326504be84497f7b5e81b159c43441);
+        
+    
+        var popup_871adef75dd93b44cc6ad67baa003caa = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c9decfce342d06a5070740f8fd517152 = $(`<div id="html_c9decfce342d06a5070740f8fd517152" style="width: 100.0%; height: 100.0%;">     <strong>Site ID:</strong> bx-01-146065<br>     <strong>Type:</strong> Link1.0<br>     <strong>Status:</strong> Live<br>     <strong>Address:</strong> 844 ST. ANN'S AVENUE<br>     <strong>CB:</strong> 201     </div>`)[0];
+            popup_871adef75dd93b44cc6ad67baa003caa.setContent(html_c9decfce342d06a5070740f8fd517152);
+        
+
+        marker_0d0c1f834488b098d95b694ff2be8629.bindPopup(popup_871adef75dd93b44cc6ad67baa003caa)
+        ;
+
+        
+    
+    
+            var marker_ec59fd52931751845fc8deb6f1afeb10 = L.marker(
+                [40.816456, -73.887672],
+                {}
+            ).addTo(marker_cluster_559beed95ddc255919c38364ca3abf50);
+        
+    
+            var icon_b42b77d17ea5dca41435fef053ee7c9e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_ec59fd52931751845fc8deb6f1afeb10.setIcon(icon_b42b77d17ea5dca41435fef053ee7c9e);
+        
+    
+        var popup_84b1658b43e6bc5a5b532741c9a649a6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0a1c195fc0237445ed95b39af52d38c4 = $(`<div id="html_0a1c195fc0237445ed95b39af52d38c4" style="width: 100.0%; height: 100.0%;">     <strong>Site ID:</strong> bx-02-118974<br>     <strong>Type:</strong> Link1.0<br>     <strong>Status:</strong> Live<br>     <strong>Address:</strong> 798 HUNTS POINT AVENUE<br>     <strong>CB:</strong> 202     </div>`)[0];
+            popup_84b1658b43e6bc5a5b532741c9a649a6.setContent(html_0a1c195fc0237445ed95b39af52d38c4);
+        
+
+        marker_ec59fd52931751845fc8deb6f1afeb10.bindPopup(popup_84b1658b43e6bc5a5b532741c9a649a6)
+        ;
+
+        
+    
+    
+            var marker_91510d81b50a515c6424baa423183687 = L.marker(
+                [40.812163, -73.916467],
+                {}
+            ).addTo(marker_cluster_559beed95ddc255919c38364ca3abf50);
+        
+    
+            var icon_8b0ac0d4fcf7fb95b4b75f096d7f1477 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_91510d81b50a515c6424baa423183687.setIcon(icon_8b0ac0d4fcf7fb95b4b75f096d7f1477);
+        
+    
+        var popup_d3f1a7eee98cff979b28c513dbc79e03 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_29083f2ac6388a3a012e8cb0ffb11a59 = $(`<div id="html_29083f2ac6388a3a012e8cb0ffb11a59" style="width: 100.0%; height: 100.0%;">     <strong>Site ID:</strong> bx-01-131467<br>     <strong>Type:</strong> Link1.0<br>     <strong>Status:</strong> Live<br>     <strong>Address:</strong> 436 BROOK AVENUE<br>     <strong>CB:</strong> 201     </div>`)[0];
+            popup_d3f1a7eee98cff979b28c513dbc79e03.setContent(html_29083f2ac6388a3a012e8cb0ffb11a59);
+        
+
+        marker_91510d81b50a515c6424baa423183687.bindPopup(popup_d3f1a7eee98cff979b28c513dbc79e03)
+        ;
+
+        
+    
+    
+            var marker_6c23503748697a9918710d4c666f843c = L.marker(
+                [40.820102, -73.912838],
+                {}
+            ).addTo(marker_cluster_559beed95ddc255919c38364ca3abf50);
+        
+    
+            var icon_79db12bf88da40c3750f29cc5c4e5f2c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_6c23503748697a9918710d4c666f843c.setIcon(icon_79db12bf88da40c3750f29cc5c4e5f2c);
+        
+    
+        var popup_a95ff1d98c89da7ebfe41bc677e4f944 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b738a1271936a5912915a739168ac9dc = $(`<div id="html_b738a1271936a5912915a739168ac9dc" style="width: 100.0%; height: 100.0%;">     <strong>Site ID:</strong> bx-01-118947<br>     <strong>Type:</strong> Link1.0<br>     <strong>Status:</strong> Live<br>     <strong>Address:</strong> 487 EAST 156 STREET<br>     <strong>CB:</strong> 201     </div>`)[0];
+            popup_a95ff1d98c89da7ebfe41bc677e4f944.setContent(html_b738a1271936a5912915a739168ac9dc);
+        
+
+        marker_6c23503748697a9918710d4c666f843c.bindPopup(popup_a95ff1d98c89da7ebfe41bc677e4f944)
+        ;
+
+        
+    
+    
+            var marker_6782d772cb68efb6f7dec589e31fd917 = L.marker(
+                [40.810373, -73.886431],
+                {}
+            ).addTo(marker_cluster_559beed95ddc255919c38364ca3abf50);
+        
+    
+            var icon_b22b9eedb8ecce1e523959d7b66996d2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_6782d772cb68efb6f7dec589e31fd917.setIcon(icon_b22b9eedb8ecce1e523959d7b66996d2);
+        
+    
+        var popup_5cd9609cdcec8f66609946bfb965cab8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7d5d6dd715c298d4189bade9b2bbc068 = $(`<div id="html_7d5d6dd715c298d4189bade9b2bbc068" style="width: 100.0%; height: 100.0%;">     <strong>Site ID:</strong> bx-02-152493<br>     <strong>Type:</strong> Link1.0<br>     <strong>Status:</strong> Live<br>     <strong>Address:</strong> 1280 OAK POINT AVENUE<br>     <strong>CB:</strong> 202     </div>`)[0];
+            popup_5cd9609cdcec8f66609946bfb965cab8.setContent(html_7d5d6dd715c298d4189bade9b2bbc068);
+        
+
+        marker_6782d772cb68efb6f7dec589e31fd917.bindPopup(popup_5cd9609cdcec8f66609946bfb965cab8)
+        ;
+
+        
+    
+    
+            var marker_75fba493cc50466518a8cbc3b92a67e7 = L.marker(
+                [40.815039, -73.929885],
+                {}
+            ).addTo(marker_cluster_559beed95ddc255919c38364ca3abf50);
+        
+    
+            var icon_1419d655ab34b1168ab458ea6fa77b40 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_75fba493cc50466518a8cbc3b92a67e7.setIcon(icon_1419d655ab34b1168ab458ea6fa77b40);
+        
+    
+        var popup_eeaf2d785ab906168825020987a2674c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ec3a4287a1ed1484837f41f63c6d6370 = $(`<div id="html_ec3a4287a1ed1484837f41f63c6d6370" style="width: 100.0%; height: 100.0%;">     <strong>Site ID:</strong> bx-01-145841<br>     <strong>Type:</strong> Link1.0<br>     <strong>Status:</strong> Live<br>     <strong>Address:</strong> 301 WALTON AVENUE<br>     <strong>CB:</strong> 201     </div>`)[0];
+            popup_eeaf2d785ab906168825020987a2674c.setContent(html_ec3a4287a1ed1484837f41f63c6d6370);
+        
+
+        marker_75fba493cc50466518a8cbc3b92a67e7.bindPopup(popup_eeaf2d785ab906168825020987a2674c)
+        ;
+
+        
+    
+    
+            var marker_2a472cfca6a2c6506ac6db3540b3e237 = L.marker(
+                [40.813128, -73.908991],
+                {}
+            ).addTo(marker_cluster_559beed95ddc255919c38364ca3abf50);
+        
+    
+            var icon_d4b3d056a6ac839ca3ce658ec0f97f93 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_2a472cfca6a2c6506ac6db3540b3e237.setIcon(icon_d4b3d056a6ac839ca3ce658ec0f97f93);
+        
+    
+        var popup_e45f7bb7ecd6d32b888ff2b53111e68b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5b801d8fb6421c7dff83ae711055d9ee = $(`<div id="html_5b801d8fb6421c7dff83ae711055d9ee" style="width: 100.0%; height: 100.0%;">     <strong>Site ID:</strong> bx-01-119027<br>     <strong>Type:</strong> Link1.0<br>     <strong>Status:</strong> Live<br>     <strong>Address:</strong> 718 EAST 149 STREET<br>     <strong>CB:</strong> 201     </div>`)[0];
+            popup_e45f7bb7ecd6d32b888ff2b53111e68b.setContent(html_5b801d8fb6421c7dff83ae711055d9ee);
+        
+
+        marker_2a472cfca6a2c6506ac6db3540b3e237.bindPopup(popup_e45f7bb7ecd6d32b888ff2b53111e68b)
+        ;
+
+        
+    
+    
+            var marker_b60b9c15dd71001f2d11b6c7e20009d7 = L.marker(
+                [40.806287, -73.917955],
+                {}
+            ).addTo(marker_cluster_559beed95ddc255919c38364ca3abf50);
+        
+    
+            var icon_eb58b05e73d697aada0756738ac3b535 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_b60b9c15dd71001f2d11b6c7e20009d7.setIcon(icon_eb58b05e73d697aada0756738ac3b535);
+        
+    
+        var popup_d808ffe93634024099650893e77366ff = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ae0485912d7ae05438471b3346992b1b = $(`<div id="html_ae0485912d7ae05438471b3346992b1b" style="width: 100.0%; height: 100.0%;">     <strong>Site ID:</strong> bx-01-146053<br>     <strong>Type:</strong> LINK1.0<br>     <strong>Status:</strong> Live<br>     <strong>Address:</strong> 211 ST. ANN'S AVENUE<br>     <strong>CB:</strong> 201     </div>`)[0];
+            popup_d808ffe93634024099650893e77366ff.setContent(html_ae0485912d7ae05438471b3346992b1b);
+        
+
+        marker_b60b9c15dd71001f2d11b6c7e20009d7.bindPopup(popup_d808ffe93634024099650893e77366ff)
+        ;
+
+        
+    
+    
+            var marker_b15eff04fa55844ce2110314b9e37246 = L.marker(
+                [40.809668, -73.922623],
+                {}
+            ).addTo(marker_cluster_559beed95ddc255919c38364ca3abf50);
+        
+    
+            var icon_4dbe86d4d0176089ba5f57be16b4c48f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_b15eff04fa55844ce2110314b9e37246.setIcon(icon_4dbe86d4d0176089ba5f57be16b4c48f);
+        
+    
+        var popup_e24c0fb774ab4086725d3e01af5c84b8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f9b48095e2ac3ccb115514f30095f6b8 = $(`<div id="html_f9b48095e2ac3ccb115514f30095f6b8" style="width: 100.0%; height: 100.0%;">     <strong>Site ID:</strong> bx-01-146024<br>     <strong>Type:</strong> Link1.0<br>     <strong>Status:</strong> Live<br>     <strong>Address:</strong> 249 WILLIS AVENUE<br>     <strong>CB:</strong> 201     </div>`)[0];
+            popup_e24c0fb774ab4086725d3e01af5c84b8.setContent(html_f9b48095e2ac3ccb115514f30095f6b8);
+        
+
+        marker_b15eff04fa55844ce2110314b9e37246.bindPopup(popup_e24c0fb774ab4086725d3e01af5c84b8)
+        ;
+
+        
+    
+    
+            var marker_45b33af7d183aeda9647b0b7efaf2880 = L.marker(
+                [40.826449, -73.898554],
+                {}
+            ).addTo(marker_cluster_559beed95ddc255919c38364ca3abf50);
+        
+    
+            var icon_d72db5fe27a7ee65c9b7f718820c35cd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_45b33af7d183aeda9647b0b7efaf2880.setIcon(icon_d72db5fe27a7ee65c9b7f718820c35cd);
+        
+    
+        var popup_19dfafb2a680097bbb6b9ce8b61cb13b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bf1c129e21da21c2fec7e7cd348c951d = $(`<div id="html_bf1c129e21da21c2fec7e7cd348c951d" style="width: 100.0%; height: 100.0%;">     <strong>Site ID:</strong> bx-02-155911<br>     <strong>Type:</strong> Link1.0<br>     <strong>Status:</strong> Live<br>     <strong>Address:</strong> 1190 PROSPECT AVENUE<br>     <strong>CB:</strong> 202     </div>`)[0];
+            popup_19dfafb2a680097bbb6b9ce8b61cb13b.setContent(html_bf1c129e21da21c2fec7e7cd348c951d);
+        
+
+        marker_45b33af7d183aeda9647b0b7efaf2880.bindPopup(popup_19dfafb2a680097bbb6b9ce8b61cb13b)
+        ;
+
+        
+    
+    
+            var marker_6c56967626e77de09b562a85c9205515 = L.marker(
+                [40.806612, -73.885215],
+                {}
+            ).addTo(marker_cluster_559beed95ddc255919c38364ca3abf50);
+        
+    
+            var icon_9288a16e4fe2bc308dc37d995611ae0c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_6c56967626e77de09b562a85c9205515.setIcon(icon_9288a16e4fe2bc308dc37d995611ae0c);
+        
+    
+        var popup_0edfeb1ddb71e431f5ac9801613a54d2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2bee93ac62fede152c4be97494f9d0b8 = $(`<div id="html_2bee93ac62fede152c4be97494f9d0b8" style="width: 100.0%; height: 100.0%;">     <strong>Site ID:</strong> bx-02-150012<br>     <strong>Type:</strong> Link1.0<br>     <strong>Status:</strong> Live<br>     <strong>Address:</strong> 1280 VIELE AVENUE<br>     <strong>CB:</strong> 202     </div>`)[0];
+            popup_0edfeb1ddb71e431f5ac9801613a54d2.setContent(html_2bee93ac62fede152c4be97494f9d0b8);
+        
+
+        marker_6c56967626e77de09b562a85c9205515.bindPopup(popup_0edfeb1ddb71e431f5ac9801613a54d2)
+        ;
+
+        
+    
+    
+            var marker_5728b7373db41b07b235ced70c6a65e6 = L.marker(
+                [40.821838, -73.897648],
+                {}
+            ).addTo(marker_cluster_559beed95ddc255919c38364ca3abf50);
+        
+    
+            var icon_36b5c42d9de30dc2e3dc3aa06775d49c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_5728b7373db41b07b235ced70c6a65e6.setIcon(icon_36b5c42d9de30dc2e3dc3aa06775d49c);
+        
+    
+        var popup_3d15b12910d31e88aef0584d6abd4b29 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e5f66a4ac543feb50071c66674a7c1c6 = $(`<div id="html_e5f66a4ac543feb50071c66674a7c1c6" style="width: 100.0%; height: 100.0%;">     <strong>Site ID:</strong> bx-02-145554<br>     <strong>Type:</strong> Link1.0<br>     <strong>Status:</strong> Live<br>     <strong>Address:</strong> 931 WESTCHESTER AVENUE<br>     <strong>CB:</strong> 202     </div>`)[0];
+            popup_3d15b12910d31e88aef0584d6abd4b29.setContent(html_e5f66a4ac543feb50071c66674a7c1c6);
+        
+
+        marker_5728b7373db41b07b235ced70c6a65e6.bindPopup(popup_3d15b12910d31e88aef0584d6abd4b29)
+        ;
+
+        
+    
+    
+            var marker_b9928f573d6617f7418261c629f86759 = L.marker(
+                [40.819488, -73.913668],
+                {}
+            ).addTo(marker_cluster_559beed95ddc255919c38364ca3abf50);
+        
+    
+            var icon_39f7268c1851606ea18532c1cb20fb48 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_b9928f573d6617f7418261c629f86759.setIcon(icon_39f7268c1851606ea18532c1cb20fb48);
+        
+    
+        var popup_42e5e79c1c526815071e1f3761f5d4d0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1739ab3447398b4250aca81ebab1a259 = $(`<div id="html_1739ab3447398b4250aca81ebab1a259" style="width: 100.0%; height: 100.0%;">     <strong>Site ID:</strong> bx-01-123216<br>     <strong>Type:</strong> Link1.0<br>     <strong>Status:</strong> Live<br>     <strong>Address:</strong> 3015 3 AVENUE<br>     <strong>CB:</strong> 201     </div>`)[0];
+            popup_42e5e79c1c526815071e1f3761f5d4d0.setContent(html_1739ab3447398b4250aca81ebab1a259);
+        
+
+        marker_b9928f573d6617f7418261c629f86759.bindPopup(popup_42e5e79c1c526815071e1f3761f5d4d0)
+        ;
+
+        
+    
+    
+            var marker_6f8fa73f92c23f71fe8dbe949b80e747 = L.marker(
+                [40.817926, -73.915262],
+                {}
+            ).addTo(marker_cluster_559beed95ddc255919c38364ca3abf50);
+        
+    
+            var icon_37df39e8dea4464efe9d7f69e6bb7168 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_6f8fa73f92c23f71fe8dbe949b80e747.setIcon(icon_37df39e8dea4464efe9d7f69e6bb7168);
+        
+    
+        var popup_1b1a538e68febccb7203d35d74d6bf5e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b870749942bf710ebbe637a91fd9c47f = $(`<div id="html_b870749942bf710ebbe637a91fd9c47f" style="width: 100.0%; height: 100.0%;">     <strong>Site ID:</strong> bx-01-109413<br>     <strong>Type:</strong> Link1.0<br>     <strong>Status:</strong> Live<br>     <strong>Address:</strong> 2939 3 AVENUE<br>     <strong>CB:</strong> 201     </div>`)[0];
+            popup_1b1a538e68febccb7203d35d74d6bf5e.setContent(html_b870749942bf710ebbe637a91fd9c47f);
+        
+
+        marker_6f8fa73f92c23f71fe8dbe949b80e747.bindPopup(popup_1b1a538e68febccb7203d35d74d6bf5e)
+        ;
+
+        
+    
+    
+            var marker_7fc8caf14c1b777f7d45374aad9fd0e8 = L.marker(
+                [40.82089, -73.894041],
+                {}
+            ).addTo(marker_cluster_559beed95ddc255919c38364ca3abf50);
+        
+    
+            var icon_02b263310cb18427cde9294fd57fd50d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_7fc8caf14c1b777f7d45374aad9fd0e8.setIcon(icon_02b263310cb18427cde9294fd57fd50d);
+        
+    
+        var popup_f638c6186d6222852cdbe6eb9ef0ec18 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8050c61bfa2036e515fb1a34fd54fcb9 = $(`<div id="html_8050c61bfa2036e515fb1a34fd54fcb9" style="width: 100.0%; height: 100.0%;">     <strong>Site ID:</strong> bx-02-108937<br>     <strong>Type:</strong> Link1.0<br>     <strong>Status:</strong> Live<br>     <strong>Address:</strong> 994 EAST 163 STREET<br>     <strong>CB:</strong> 202     </div>`)[0];
+            popup_f638c6186d6222852cdbe6eb9ef0ec18.setContent(html_8050c61bfa2036e515fb1a34fd54fcb9);
+        
+
+        marker_7fc8caf14c1b777f7d45374aad9fd0e8.bindPopup(popup_f638c6186d6222852cdbe6eb9ef0ec18)
+        ;
+
+        
+    
+    
+            var marker_4d2175686662cc9711fa8f573a0a6e3f = L.marker(
+                [40.807756, -73.919006],
+                {}
+            ).addTo(marker_cluster_559beed95ddc255919c38364ca3abf50);
+        
+    
+            var icon_5a5380cb139d54316dab44edae4685fe = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_4d2175686662cc9711fa8f573a0a6e3f.setIcon(icon_5a5380cb139d54316dab44edae4685fe);
+        
+    
+        var popup_bcfb47b8e9894fc381181452a66113be = L.popup({"maxWidth": "100%"});
+
+        
+            var html_604bcaa387dcc5119ad271e35b5a73d9 = $(`<div id="html_604bcaa387dcc5119ad271e35b5a73d9" style="width: 100.0%; height: 100.0%;">     <strong>Site ID:</strong> bx-01-146075<br>     <strong>Type:</strong> Link1.0<br>     <strong>Status:</strong> Live<br>     <strong>Address:</strong> 250 BROOK AVENUE<br>     <strong>CB:</strong> 201     </div>`)[0];
+            popup_bcfb47b8e9894fc381181452a66113be.setContent(html_604bcaa387dcc5119ad271e35b5a73d9);
+        
+
+        marker_4d2175686662cc9711fa8f573a0a6e3f.bindPopup(popup_bcfb47b8e9894fc381181452a66113be)
+        ;
+
+        
+    
+    
+            var marker_ac420da95fc6b7a42e26da0ca509616f = L.marker(
+                [40.812112, -73.903863],
+                {}
+            ).addTo(marker_cluster_559beed95ddc255919c38364ca3abf50);
+        
+    
+            var icon_e5cd679f29b382143cd016682d5555a3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_ac420da95fc6b7a42e26da0ca509616f.setIcon(icon_e5cd679f29b382143cd016682d5555a3);
+        
+    
+        var popup_63279f7d09e0325b7615ea00fa83835f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f139a4c381db4fe080e7fa840ca1f047 = $(`<div id="html_f139a4c381db4fe080e7fa840ca1f047" style="width: 100.0%; height: 100.0%;">     <strong>Site ID:</strong> bx-02-157674<br>     <strong>Type:</strong> Link1.0<br>     <strong>Status:</strong> Live<br>     <strong>Address:</strong> 540 SOUTHERN BOULEVARD<br>     <strong>CB:</strong> 202     </div>`)[0];
+            popup_63279f7d09e0325b7615ea00fa83835f.setContent(html_f139a4c381db4fe080e7fa840ca1f047);
+        
+
+        marker_ac420da95fc6b7a42e26da0ca509616f.bindPopup(popup_63279f7d09e0325b7615ea00fa83835f)
+        ;
+
+        
+    
+    
+            var marker_38a0dd2a02b20bf648d12cc9ec67beb0 = L.marker(
+                [40.815998, -73.908242],
+                {}
+            ).addTo(marker_cluster_559beed95ddc255919c38364ca3abf50);
+        
+    
+            var icon_3eb4b47e70696c56c26bda06af189ce6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_38a0dd2a02b20bf648d12cc9ec67beb0.setIcon(icon_3eb4b47e70696c56c26bda06af189ce6);
+        
+    
+        var popup_d2e3e674ffea9e6ae5497064c2cc2691 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_910ac819ea1f29ff0ee849638d466a76 = $(`<div id="html_910ac819ea1f29ff0ee849638d466a76" style="width: 100.0%; height: 100.0%;">     <strong>Site ID:</strong> bx-01-123210<br>     <strong>Type:</strong> Link1.0<br>     <strong>Status:</strong> Live<br>     <strong>Address:</strong> 660 WESTCHESTER AVENUE<br>     <strong>CB:</strong> 201     </div>`)[0];
+            popup_d2e3e674ffea9e6ae5497064c2cc2691.setContent(html_910ac819ea1f29ff0ee849638d466a76);
+        
+
+        marker_38a0dd2a02b20bf648d12cc9ec67beb0.bindPopup(popup_d2e3e674ffea9e6ae5497064c2cc2691)
+        ;
+
+        
+    
+    
+            var marker_5456d302dfa5db67d1034163b98d6e35 = L.marker(
+                [40.807378, -73.917],
+                {}
+            ).addTo(marker_cluster_559beed95ddc255919c38364ca3abf50);
+        
+    
+            var icon_f6362791a4e47104132de6abb9813400 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_5456d302dfa5db67d1034163b98d6e35.setIcon(icon_f6362791a4e47104132de6abb9813400);
+        
+    
+        var popup_c9015dab3ee2c9f2ad3a024fed5682dd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_92f40fc44cab53d6a4f323ea426e469b = $(`<div id="html_92f40fc44cab53d6a4f323ea426e469b" style="width: 100.0%; height: 100.0%;">     <strong>Site ID:</strong> bx-01-117230<br>     <strong>Type:</strong> Link1.0<br>     <strong>Status:</strong> Live<br>     <strong>Address:</strong> 256 ST. ANN'S AVENUE<br>     <strong>CB:</strong> 201     </div>`)[0];
+            popup_c9015dab3ee2c9f2ad3a024fed5682dd.setContent(html_92f40fc44cab53d6a4f323ea426e469b);
+        
+
+        marker_5456d302dfa5db67d1034163b98d6e35.bindPopup(popup_c9015dab3ee2c9f2ad3a024fed5682dd)
+        ;
+
+        
+    
+    
+            var marker_f6ea55136912265236f2d671da1fc6cf = L.marker(
+                [40.813595, -73.9304],
+                {}
+            ).addTo(marker_cluster_559beed95ddc255919c38364ca3abf50);
+        
+    
+            var icon_19a820efca89f1a5643839ddb2e6046e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_f6ea55136912265236f2d671da1fc6cf.setIcon(icon_19a820efca89f1a5643839ddb2e6046e);
+        
+    
+        var popup_416943c20a8cd2df2884350b21c0bd67 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8d8f2fb44d2924f05cc0997a4ecaf32b = $(`<div id="html_8d8f2fb44d2924f05cc0997a4ecaf32b" style="width: 100.0%; height: 100.0%;">     <strong>Site ID:</strong> bx-01-145821<br>     <strong>Type:</strong> Link1.0<br>     <strong>Status:</strong> Live<br>     <strong>Address:</strong> 250 WALTON AVENUE<br>     <strong>CB:</strong> 201     </div>`)[0];
+            popup_416943c20a8cd2df2884350b21c0bd67.setContent(html_8d8f2fb44d2924f05cc0997a4ecaf32b);
+        
+
+        marker_f6ea55136912265236f2d671da1fc6cf.bindPopup(popup_416943c20a8cd2df2884350b21c0bd67)
+        ;
+
+        
+    
+    
+            var marker_c74c9ae4b4aeb87bf7a6ba546d7fc4bf = L.marker(
+                [40.817141, -73.916208],
+                {}
+            ).addTo(marker_cluster_559beed95ddc255919c38364ca3abf50);
+        
+    
+            var icon_08b0b284bf49a94a5bf7823625b3c5a3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_c74c9ae4b4aeb87bf7a6ba546d7fc4bf.setIcon(icon_08b0b284bf49a94a5bf7823625b3c5a3);
+        
+    
+        var popup_475b6114a4a902e1b4d5621030d14527 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_50eaad501fe3a8b19e4b17dff81f7df4 = $(`<div id="html_50eaad501fe3a8b19e4b17dff81f7df4" style="width: 100.0%; height: 100.0%;">     <strong>Site ID:</strong> bx-01-118955<br>     <strong>Type:</strong> Link1.0<br>     <strong>Status:</strong> Live<br>     <strong>Address:</strong> 2901 3 AVENUE<br>     <strong>CB:</strong> 201     </div>`)[0];
+            popup_475b6114a4a902e1b4d5621030d14527.setContent(html_50eaad501fe3a8b19e4b17dff81f7df4);
+        
+
+        marker_c74c9ae4b4aeb87bf7a6ba546d7fc4bf.bindPopup(popup_475b6114a4a902e1b4d5621030d14527)
+        ;
+
+        
+    
+    
+            var marker_1ab9327fca2cbf27250b0b7e2402af37 = L.marker(
+                [40.818676, -73.928165],
+                {}
+            ).addTo(marker_cluster_559beed95ddc255919c38364ca3abf50);
+        
+    
+            var icon_47530deebb1790e4d4dc3dced4772e08 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_1ab9327fca2cbf27250b0b7e2402af37.setIcon(icon_47530deebb1790e4d4dc3dced4772e08);
+        
+    
+        var popup_18effb195338994512b110d3d774a460 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_53f161790c80b486cf7783598eb8f287 = $(`<div id="html_53f161790c80b486cf7783598eb8f287" style="width: 100.0%; height: 100.0%;">     <strong>Site ID:</strong> bx-01-119075<br>     <strong>Type:</strong> Link1.0<br>     <strong>Status:</strong> Live<br>     <strong>Address:</strong> 134 EAST 149 STREET<br>     <strong>CB:</strong> 201     </div>`)[0];
+            popup_18effb195338994512b110d3d774a460.setContent(html_53f161790c80b486cf7783598eb8f287);
+        
+
+        marker_1ab9327fca2cbf27250b0b7e2402af37.bindPopup(popup_18effb195338994512b110d3d774a460)
+        ;
+
+        
+    
+    
+            var marker_3d8a03e7c29e2eacd635d260f6d713f0 = L.marker(
+                [40.812253, -73.928665],
+                {}
+            ).addTo(marker_cluster_559beed95ddc255919c38364ca3abf50);
+        
+    
+            var icon_67a61c24eb7c7fb836f9e143603d8a37 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_3d8a03e7c29e2eacd635d260f6d713f0.setIcon(icon_67a61c24eb7c7fb836f9e143603d8a37);
+        
+    
+        var popup_847eb2ac29aa4a0b96c5a1a7f3a61733 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_16e2c9ed37f88a55d9f849dd13b7e9bd = $(`<div id="html_16e2c9ed37f88a55d9f849dd13b7e9bd" style="width: 100.0%; height: 100.0%;">     <strong>Site ID:</strong> bx-01-145854<br>     <strong>Type:</strong> Link1.0<br>     <strong>Status:</strong> Live<br>     <strong>Address:</strong> 217 EAST 138 STREET<br>     <strong>CB:</strong> 201     </div>`)[0];
+            popup_847eb2ac29aa4a0b96c5a1a7f3a61733.setContent(html_16e2c9ed37f88a55d9f849dd13b7e9bd);
+        
+
+        marker_3d8a03e7c29e2eacd635d260f6d713f0.bindPopup(popup_847eb2ac29aa4a0b96c5a1a7f3a61733)
+        ;
+
+        
+    
+    
+            var marker_f17e08d6d73b8cf095912298d3515290 = L.marker(
+                [40.812841, -73.916074],
+                {}
+            ).addTo(marker_cluster_559beed95ddc255919c38364ca3abf50);
+        
+    
+            var icon_6036bdd9f99e9e2d446ded71b233db31 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_f17e08d6d73b8cf095912298d3515290.setIcon(icon_6036bdd9f99e9e2d446ded71b233db31);
+        
+    
+        var popup_bda418965c8c9bce756109a60ca8d8c7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3dccee0390785e1568d8243930673889 = $(`<div id="html_3dccee0390785e1568d8243930673889" style="width: 100.0%; height: 100.0%;">     <strong>Site ID:</strong> bx-01-146055<br>     <strong>Type:</strong> Link1.0<br>     <strong>Status:</strong> Live<br>     <strong>Address:</strong> 468 BROOK AVENUE<br>     <strong>CB:</strong> 201     </div>`)[0];
+            popup_bda418965c8c9bce756109a60ca8d8c7.setContent(html_3dccee0390785e1568d8243930673889);
+        
+
+        marker_f17e08d6d73b8cf095912298d3515290.bindPopup(popup_bda418965c8c9bce756109a60ca8d8c7)
+        ;
+
+        
+    
+    
+            var marker_c69d238124398a87982a13986a768375 = L.marker(
+                [40.817655, -73.888462],
+                {}
+            ).addTo(marker_cluster_559beed95ddc255919c38364ca3abf50);
+        
+    
+            var icon_79b3f88469070ebb22bcc66ef2c82021 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_c69d238124398a87982a13986a768375.setIcon(icon_79b3f88469070ebb22bcc66ef2c82021);
+        
+    
+        var popup_ade7f8d1f0a7b8b482046aff473db917 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0055942814c967b113bb90c75c6ced86 = $(`<div id="html_0055942814c967b113bb90c75c6ced86" style="width: 100.0%; height: 100.0%;">     <strong>Site ID:</strong> bx-02-118973<br>     <strong>Type:</strong> Link1.0<br>     <strong>Status:</strong> Live<br>     <strong>Address:</strong> 848 HUNTS POINT AVENUE<br>     <strong>CB:</strong> 202     </div>`)[0];
+            popup_ade7f8d1f0a7b8b482046aff473db917.setContent(html_0055942814c967b113bb90c75c6ced86);
+        
+
+        marker_c69d238124398a87982a13986a768375.bindPopup(popup_ade7f8d1f0a7b8b482046aff473db917)
+        ;
+
+        
+    
+    
+            var marker_41c31925c462491cefbe9e82face2133 = L.marker(
+                [40.813367, -73.919625],
+                {}
+            ).addTo(marker_cluster_559beed95ddc255919c38364ca3abf50);
+        
+    
+            var icon_3b086a10ede71ec39884a3d3e9c38637 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_41c31925c462491cefbe9e82face2133.setIcon(icon_3b086a10ede71ec39884a3d3e9c38637);
+        
+    
+        var popup_be96c884f50c7f688595dd96c9dc3876 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a2ac5a8be5b06a07891be6f79ec8db2a = $(`<div id="html_a2ac5a8be5b06a07891be6f79ec8db2a" style="width: 100.0%; height: 100.0%;">     <strong>Site ID:</strong> bx-01-138788<br>     <strong>Type:</strong> Link1.0<br>     <strong>Status:</strong> Live<br>     <strong>Address:</strong> 426 WILLIS AVENUE<br>     <strong>CB:</strong> 201     </div>`)[0];
+            popup_be96c884f50c7f688595dd96c9dc3876.setContent(html_a2ac5a8be5b06a07891be6f79ec8db2a);
+        
+
+        marker_41c31925c462491cefbe9e82face2133.bindPopup(popup_be96c884f50c7f688595dd96c9dc3876)
+        ;
+
+        
+    
+    
+            var marker_83023d77895237a806538813b6271984 = L.marker(
+                [40.818048, -73.899498],
+                {}
+            ).addTo(marker_cluster_559beed95ddc255919c38364ca3abf50);
+        
+    
+            var icon_147fa6197922492277262ba426b53ac5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_83023d77895237a806538813b6271984.setIcon(icon_147fa6197922492277262ba426b53ac5);
+        
+    
+        var popup_3db801b983a53a308222ba08ae5e3cd6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0ee429be2568dfdf2ce2c691a5744d6c = $(`<div id="html_0ee429be2568dfdf2ce2c691a5744d6c" style="width: 100.0%; height: 100.0%;">     <strong>Site ID:</strong> bx-02-152409<br>     <strong>Type:</strong> Link1.0<br>     <strong>Status:</strong> Live<br>     <strong>Address:</strong> 928 LONGWOOD AVENUE<br>     <strong>CB:</strong> 202     </div>`)[0];
+            popup_3db801b983a53a308222ba08ae5e3cd6.setContent(html_0ee429be2568dfdf2ce2c691a5744d6c);
+        
+
+        marker_83023d77895237a806538813b6271984.bindPopup(popup_3db801b983a53a308222ba08ae5e3cd6)
+        ;
+
+        
+    
+    
+            var marker_31e615b626cfeaa47bce6fee1e350253 = L.marker(
+                [40.818886, -73.929213],
+                {}
+            ).addTo(marker_cluster_559beed95ddc255919c38364ca3abf50);
+        
+    
+            var icon_b8d587c74b8263dadd4aab53a7bc2ee9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_31e615b626cfeaa47bce6fee1e350253.setIcon(icon_b8d587c74b8263dadd4aab53a7bc2ee9);
+        
+    
+        var popup_1b2ca3326fd2fa7e1c124ff29cfb8d1a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c85ba67f6f1c64d825f5ced7990c0175 = $(`<div id="html_c85ba67f6f1c64d825f5ced7990c0175" style="width: 100.0%; height: 100.0%;">     <strong>Site ID:</strong> bx-01-145688<br>     <strong>Type:</strong> Link1.0<br>     <strong>Status:</strong> Live<br>     <strong>Address:</strong> 518 GERARD AVENUE<br>     <strong>CB:</strong> 201     </div>`)[0];
+            popup_1b2ca3326fd2fa7e1c124ff29cfb8d1a.setContent(html_c85ba67f6f1c64d825f5ced7990c0175);
+        
+
+        marker_31e615b626cfeaa47bce6fee1e350253.bindPopup(popup_1b2ca3326fd2fa7e1c124ff29cfb8d1a)
+        ;
+
+        
+    
+    
+            var marker_5ebbe4699ab0eb0427619c57ec5af6a0 = L.marker(
+                [40.820806, -73.898984],
+                {}
+            ).addTo(marker_cluster_559beed95ddc255919c38364ca3abf50);
+        
+    
+            var icon_51e0f2c23d47219aa63550dc2670bfa2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_5ebbe4699ab0eb0427619c57ec5af6a0.setIcon(icon_51e0f2c23d47219aa63550dc2670bfa2);
+        
+    
+        var popup_2646e5661c97fc22992cb6a3e1f44699 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6288b1890781bbe7b34eaa62856cebe0 = $(`<div id="html_6288b1890781bbe7b34eaa62856cebe0" style="width: 100.0%; height: 100.0%;">     <strong>Site ID:</strong> bx-02-152007<br>     <strong>Type:</strong> Link5G_Ad<br>     <strong>Status:</strong> Live<br>     <strong>Address:</strong> 888 Westchester Avenue<br>     <strong>CB:</strong> 202     </div>`)[0];
+            popup_2646e5661c97fc22992cb6a3e1f44699.setContent(html_6288b1890781bbe7b34eaa62856cebe0);
+        
+
+        marker_5ebbe4699ab0eb0427619c57ec5af6a0.bindPopup(popup_2646e5661c97fc22992cb6a3e1f44699)
+        ;
+
+        
+    
+    
+            var marker_e06e0b3d6d3cd1f63df8a39da5367cc6 = L.marker(
+                [40.810255, -73.921923],
+                {}
+            ).addTo(marker_cluster_559beed95ddc255919c38364ca3abf50);
+        
+    
+            var icon_a161320c7ad783cdcdefb131c7552a98 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_e06e0b3d6d3cd1f63df8a39da5367cc6.setIcon(icon_a161320c7ad783cdcdefb131c7552a98);
+        
+    
+        var popup_381e4d19a46b7a1c433f18621b0f6e8e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1fb84dc0b0d3044164e4c4e398c72c88 = $(`<div id="html_1fb84dc0b0d3044164e4c4e398c72c88" style="width: 100.0%; height: 100.0%;">     <strong>Site ID:</strong> bx-01-146083<br>     <strong>Type:</strong> Link1.0<br>     <strong>Status:</strong> Live<br>     <strong>Address:</strong> 296 WILLIS AVENUE<br>     <strong>CB:</strong> 201     </div>`)[0];
+            popup_381e4d19a46b7a1c433f18621b0f6e8e.setContent(html_1fb84dc0b0d3044164e4c4e398c72c88);
+        
+
+        marker_e06e0b3d6d3cd1f63df8a39da5367cc6.bindPopup(popup_381e4d19a46b7a1c433f18621b0f6e8e)
+        ;
+
+        
+    
+    
+            var marker_03fda5fb95af413ca2ae27fe85e7731c = L.marker(
+                [40.822112, -73.914849],
+                {}
+            ).addTo(marker_cluster_559beed95ddc255919c38364ca3abf50);
+        
+    
+            var icon_a6a4171e059426c0c739d8266fbed7e2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_03fda5fb95af413ca2ae27fe85e7731c.setIcon(icon_a6a4171e059426c0c739d8266fbed7e2);
+        
+    
+        var popup_0a2dfd12ae840aeb0c030eec64cb1f20 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4453b0d5f013698a33368f0e8f916899 = $(`<div id="html_4453b0d5f013698a33368f0e8f916899" style="width: 100.0%; height: 100.0%;">     <strong>Site ID:</strong> bx-01-146063<br>     <strong>Type:</strong> Link1.0<br>     <strong>Status:</strong> Live<br>     <strong>Address:</strong> 776 MELROSE AVENUE<br>     <strong>CB:</strong> 201     </div>`)[0];
+            popup_0a2dfd12ae840aeb0c030eec64cb1f20.setContent(html_4453b0d5f013698a33368f0e8f916899);
+        
+
+        marker_03fda5fb95af413ca2ae27fe85e7731c.bindPopup(popup_0a2dfd12ae840aeb0c030eec64cb1f20)
+        ;
+
+        
+    
+    
+            var marker_fb761981a460c310dadf7f02f965e5d1 = L.marker(
+                [40.823219, -73.891694],
+                {}
+            ).addTo(marker_cluster_559beed95ddc255919c38364ca3abf50);
+        
+    
+            var icon_f0d5741b459f28dfc1acf757f914aec7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_fb761981a460c310dadf7f02f965e5d1.setIcon(icon_f0d5741b459f28dfc1acf757f914aec7);
+        
+    
+        var popup_fb832fe20cbcc2700b0ada4f26082230 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3ab73acca0f802f517b8a2c5f811ce7a = $(`<div id="html_3ab73acca0f802f517b8a2c5f811ce7a" style="width: 100.0%; height: 100.0%;">     <strong>Site ID:</strong> bx-02-123176<br>     <strong>Type:</strong> Link5G_Ad<br>     <strong>Status:</strong> Live<br>     <strong>Address:</strong> 945 ALDUS STREET<br>     <strong>CB:</strong> 202     </div>`)[0];
+            popup_fb832fe20cbcc2700b0ada4f26082230.setContent(html_3ab73acca0f802f517b8a2c5f811ce7a);
+        
+
+        marker_fb761981a460c310dadf7f02f965e5d1.bindPopup(popup_fb832fe20cbcc2700b0ada4f26082230)
+        ;
+
+        
+    
+    
+            var marker_73cdaff017c7ad8ef946ba9e0b14a748 = L.marker(
+                [40.819568, -73.913388],
+                {}
+            ).addTo(marker_cluster_559beed95ddc255919c38364ca3abf50);
+        
+    
+            var icon_6a8fa8802c259fed52b4055e781bb525 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_73cdaff017c7ad8ef946ba9e0b14a748.setIcon(icon_6a8fa8802c259fed52b4055e781bb525);
+        
+    
+        var popup_3459c7e16b9593d320be0d46c5ce272d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_900d085024a04330607192c2113ecca5 = $(`<div id="html_900d085024a04330607192c2113ecca5" style="width: 100.0%; height: 100.0%;">     <strong>Site ID:</strong> bx-01-123215<br>     <strong>Type:</strong> Link1.0<br>     <strong>Status:</strong> Live<br>     <strong>Address:</strong> 3012 3 AVENUE<br>     <strong>CB:</strong> 201     </div>`)[0];
+            popup_3459c7e16b9593d320be0d46c5ce272d.setContent(html_900d085024a04330607192c2113ecca5);
+        
+
+        marker_73cdaff017c7ad8ef946ba9e0b14a748.bindPopup(popup_3459c7e16b9593d320be0d46c5ce272d)
+        ;
+
+        
+    
+    
+            var marker_c1f3141e1acf0ae9b0afb2e95d2a7c8f = L.marker(
+                [40.868698, -73.902101],
+                {}
+            ).addTo(marker_cluster_559beed95ddc255919c38364ca3abf50);
+        
+    
+            var icon_df5f8b1c99bc1ff03e7620746e7bd541 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_c1f3141e1acf0ae9b0afb2e95d2a7c8f.setIcon(icon_df5f8b1c99bc1ff03e7620746e7bd541);
+        
+    
+        var popup_9695ce483bfe42cf531facf3a758d2b2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_16e9c58d874ebe1d5bc316227eb95c91 = $(`<div id="html_16e9c58d874ebe1d5bc316227eb95c91" style="width: 100.0%; height: 100.0%;">     <strong>Site ID:</strong> bx-08-145850<br>     <strong>Type:</strong> Link1.0<br>     <strong>Status:</strong> Live<br>     <strong>Address:</strong> 119 WEST KINGSBRIDGE ROAD<br>     <strong>CB:</strong> 208     </div>`)[0];
+            popup_9695ce483bfe42cf531facf3a758d2b2.setContent(html_16e9c58d874ebe1d5bc316227eb95c91);
+        
+
+        marker_c1f3141e1acf0ae9b0afb2e95d2a7c8f.bindPopup(popup_9695ce483bfe42cf531facf3a758d2b2)
+        ;
+
+        
+    
+    
+            var marker_6a14594a7625b9910d6ab91ce76da84c = L.marker(
+                [40.816751, -73.922955],
+                {}
+            ).addTo(marker_cluster_559beed95ddc255919c38364ca3abf50);
+        
+    
+            var icon_7a922b8b4a61e675f58d83d07c2f55ca = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_6a14594a7625b9910d6ab91ce76da84c.setIcon(icon_7a922b8b4a61e675f58d83d07c2f55ca);
+        
+    
+        var popup_1dc70bfad671ae9304ebff36811ec27b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_213b9b3894f053438439559d88c6ec09 = $(`<div id="html_213b9b3894f053438439559d88c6ec09" style="width: 100.0%; height: 100.0%;">     <strong>Site ID:</strong> bx-01-116415<br>     <strong>Type:</strong> Link1.0<br>     <strong>Status:</strong> Live<br>     <strong>Address:</strong> 522 MORRIS AVENUE<br>     <strong>CB:</strong> 201     </div>`)[0];
+            popup_1dc70bfad671ae9304ebff36811ec27b.setContent(html_213b9b3894f053438439559d88c6ec09);
+        
+
+        marker_6a14594a7625b9910d6ab91ce76da84c.bindPopup(popup_1dc70bfad671ae9304ebff36811ec27b)
+        ;
+
+        
+    
+    
+            var marker_a916a99a6c14effaa8a21e9959d4f3e1 = L.marker(
+                [40.814577, -73.89693],
+                {}
+            ).addTo(marker_cluster_559beed95ddc255919c38364ca3abf50);
+        
+    
+            var icon_ad0226b495da235c4e5e0231f068208c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_a916a99a6c14effaa8a21e9959d4f3e1.setIcon(icon_ad0226b495da235c4e5e0231f068208c);
+        
+    
+        var popup_8b70b78766f7d782939262c2bc6efad1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b5baddff34b088750cff4bd8e36b818a = $(`<div id="html_b5baddff34b088750cff4bd8e36b818a" style="width: 100.0%; height: 100.0%;">     <strong>Site ID:</strong> bx-02-155725<br>     <strong>Type:</strong> Link5G_Ad<br>     <strong>Status:</strong> Live<br>     <strong>Address:</strong> 751 BRUCKNER BOULEVARD<br>     <strong>CB:</strong> 202     </div>`)[0];
+            popup_8b70b78766f7d782939262c2bc6efad1.setContent(html_b5baddff34b088750cff4bd8e36b818a);
+        
+
+        marker_a916a99a6c14effaa8a21e9959d4f3e1.bindPopup(popup_8b70b78766f7d782939262c2bc6efad1)
+        ;
+
+        
+    
+    
+            var marker_8efc916c76f431ff67260b4375c1784f = L.marker(
+                [40.806385, -73.916245],
+                {}
+            ).addTo(marker_cluster_559beed95ddc255919c38364ca3abf50);
+        
+    
+            var icon_72818340b6f287a120b297f52a748722 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_8efc916c76f431ff67260b4375c1784f.setIcon(icon_72818340b6f287a120b297f52a748722);
+        
+    
+        var popup_8a399239ce72b958c86656c0fe830f3f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_948e8d6bd978acbab91207e0578d26c9 = $(`<div id="html_948e8d6bd978acbab91207e0578d26c9" style="width: 100.0%; height: 100.0%;">     <strong>Site ID:</strong> bx-01-146054<br>     <strong>Type:</strong> Link1.0<br>     <strong>Status:</strong> Live<br>     <strong>Address:</strong> 601 EAST 138 STREET<br>     <strong>CB:</strong> 201     </div>`)[0];
+            popup_8a399239ce72b958c86656c0fe830f3f.setContent(html_948e8d6bd978acbab91207e0578d26c9);
+        
+
+        marker_8efc916c76f431ff67260b4375c1784f.bindPopup(popup_8a399239ce72b958c86656c0fe830f3f)
+        ;
+
+        
+    
+    
+            var marker_ecf05818ec449420c355f08d0b3bc924 = L.marker(
+                [40.820902, -73.896055],
+                {}
+            ).addTo(marker_cluster_559beed95ddc255919c38364ca3abf50);
+        
+    
+            var icon_bf4502aea6351213e7d3ab3920ad7446 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_ecf05818ec449420c355f08d0b3bc924.setIcon(icon_bf4502aea6351213e7d3ab3920ad7446);
+        
+    
+        var popup_def4001080ab7a3f9434a72de621c802 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a0b6c84b52518448b8af041a0464c4e7 = $(`<div id="html_a0b6c84b52518448b8af041a0464c4e7" style="width: 100.0%; height: 100.0%;">     <strong>Site ID:</strong> bx-02-111492<br>     <strong>Type:</strong> Link1.0<br>     <strong>Status:</strong> Live<br>     <strong>Address:</strong> 948 EAST 163 STREET<br>     <strong>CB:</strong> 202     </div>`)[0];
+            popup_def4001080ab7a3f9434a72de621c802.setContent(html_a0b6c84b52518448b8af041a0464c4e7);
+        
+
+        marker_ecf05818ec449420c355f08d0b3bc924.bindPopup(popup_def4001080ab7a3f9434a72de621c802)
+        ;
+
+        
+    
+    
+            var marker_d0609258be46097b906a8598c78c03ca = L.marker(
+                [40.822022, -73.911953],
+                {}
+            ).addTo(marker_cluster_559beed95ddc255919c38364ca3abf50);
+        
+    
+            var icon_39feabe89b5e254507de4d57d0926fc5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_d0609258be46097b906a8598c78c03ca.setIcon(icon_39feabe89b5e254507de4d57d0926fc5);
+        
+    
+        var popup_f4b9f1a2144a09c6c5dc840f0fab600c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_69181fbe429813dd99d9350ee139af4b = $(`<div id="html_69181fbe429813dd99d9350ee139af4b" style="width: 100.0%; height: 100.0%;">     <strong>Site ID:</strong> bx-01-146044<br>     <strong>Type:</strong> Link1.0<br>     <strong>Status:</strong> Live<br>     <strong>Address:</strong> 3125 3 AVENUE<br>     <strong>CB:</strong> 201     </div>`)[0];
+            popup_f4b9f1a2144a09c6c5dc840f0fab600c.setContent(html_69181fbe429813dd99d9350ee139af4b);
+        
+
+        marker_d0609258be46097b906a8598c78c03ca.bindPopup(popup_f4b9f1a2144a09c6c5dc840f0fab600c)
+        ;
+
+        
+    
+    
+            var marker_ea814552af3b87137d5b130b5d8dec09 = L.marker(
+                [40.820115, -73.89109],
+                {}
+            ).addTo(marker_cluster_559beed95ddc255919c38364ca3abf50);
+        
+    
+            var icon_b0ddf1310aac696bf2fd925e810ffb7c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_ea814552af3b87137d5b130b5d8dec09.setIcon(icon_b0ddf1310aac696bf2fd925e810ffb7c);
+        
+    
+        var popup_e38d5742d6cc7e4a1ec22324af40f61c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9f389f1474d9077ad788e1159497db69 = $(`<div id="html_9f389f1474d9077ad788e1159497db69" style="width: 100.0%; height: 100.0%;">     <strong>Site ID:</strong> bx-02-145558<br>     <strong>Type:</strong> Link1.0<br>     <strong>Status:</strong> Live<br>     <strong>Address:</strong> 985 BRUCKNER BOULEVARD<br>     <strong>CB:</strong> 202     </div>`)[0];
+            popup_e38d5742d6cc7e4a1ec22324af40f61c.setContent(html_9f389f1474d9077ad788e1159497db69);
+        
+
+        marker_ea814552af3b87137d5b130b5d8dec09.bindPopup(popup_e38d5742d6cc7e4a1ec22324af40f61c)
+        ;
+
+        
+    
+    
+            var marker_66dfb7e5735df17ec89783507bf773b5 = L.marker(
+                [40.812779, -73.881469],
+                {}
+            ).addTo(marker_cluster_559beed95ddc255919c38364ca3abf50);
+        
+    
+            var icon_c9c6cbaec5ac3600b089d295b65d709c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_66dfb7e5735df17ec89783507bf773b5.setIcon(icon_c9c6cbaec5ac3600b089d295b65d709c);
+        
+    
+        var popup_b803249c67190d1349db8e1604ca17cc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_05dd57c527c5872f187268022d93764f = $(`<div id="html_05dd57c527c5872f187268022d93764f" style="width: 100.0%; height: 100.0%;">     <strong>Site ID:</strong> bx-02-157804<br>     <strong>Type:</strong> Link5G_Ad<br>     <strong>Status:</strong> Live<br>     <strong>Address:</strong> 1390 RANDALL AVENUE<br>     <strong>CB:</strong> 202     </div>`)[0];
+            popup_b803249c67190d1349db8e1604ca17cc.setContent(html_05dd57c527c5872f187268022d93764f);
+        
+
+        marker_66dfb7e5735df17ec89783507bf773b5.bindPopup(popup_b803249c67190d1349db8e1604ca17cc)
+        ;
+
+        
+    
+    
+            var marker_c6109ea0bff27bfa677058c61d9af044 = L.marker(
+                [40.816692, -73.916719],
+                {}
+            ).addTo(marker_cluster_559beed95ddc255919c38364ca3abf50);
+        
+    
+            var icon_e84f26f58d3041643bc8116618eab225 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_c6109ea0bff27bfa677058c61d9af044.setIcon(icon_e84f26f58d3041643bc8116618eab225);
+        
+    
+        var popup_43ecda48a555f02e3a9694f27f08b552 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5437d936e94cfef29f8b820be0378407 = $(`<div id="html_5437d936e94cfef29f8b820be0378407" style="width: 100.0%; height: 100.0%;">     <strong>Site ID:</strong> bx-01-123208<br>     <strong>Type:</strong> Link1.0<br>     <strong>Status:</strong> Live<br>     <strong>Address:</strong> 2883 3 AVENUE<br>     <strong>CB:</strong> 201     </div>`)[0];
+            popup_43ecda48a555f02e3a9694f27f08b552.setContent(html_5437d936e94cfef29f8b820be0378407);
+        
+
+        marker_c6109ea0bff27bfa677058c61d9af044.bindPopup(popup_43ecda48a555f02e3a9694f27f08b552)
+        ;
+
+        
+    
+    
+            var marker_0a51fd4b87d85b44de55831bf24732f7 = L.marker(
+                [40.80891, -73.922209],
+                {}
+            ).addTo(marker_cluster_559beed95ddc255919c38364ca3abf50);
+        
+    
+            var icon_2cfd7af979c082ad2a3a68d07f486c15 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_0a51fd4b87d85b44de55831bf24732f7.setIcon(icon_2cfd7af979c082ad2a3a68d07f486c15);
+        
+    
+        var popup_464bc71b3f9e99ff13d40bae65994fb3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fca1186a6526ad62840ac9293f4bf73c = $(`<div id="html_fca1186a6526ad62840ac9293f4bf73c" style="width: 100.0%; height: 100.0%;">     <strong>Site ID:</strong> bx-01-102011<br>     <strong>Type:</strong> Link1.0<br>     <strong>Status:</strong> Live<br>     <strong>Address:</strong> 417 EAST 138 STREET<br>     <strong>CB:</strong> 201     </div>`)[0];
+            popup_464bc71b3f9e99ff13d40bae65994fb3.setContent(html_fca1186a6526ad62840ac9293f4bf73c);
+        
+
+        marker_0a51fd4b87d85b44de55831bf24732f7.bindPopup(popup_464bc71b3f9e99ff13d40bae65994fb3)
+        ;
+
+        
+    
+    
+            var marker_6d04572cd071b446648aaa8bb5c1d38f = L.marker(
+                [40.816679, -73.916483],
+                {}
+            ).addTo(marker_cluster_559beed95ddc255919c38364ca3abf50);
+        
+    
+            var icon_bf22f1ac8ec0c3f7b4fba94f6c9122af = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wifi", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_6d04572cd071b446648aaa8bb5c1d38f.setIcon(icon_bf22f1ac8ec0c3f7b4fba94f6c9122af);
+        
+    
+        var popup_9585a0d00201ec21bd740ba60a2e1e0c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b21545b8c858080f4df29a3ab62a6f99 = $(`<div id="html_b21545b8c858080f4df29a3ab62a6f99" style="width: 100.0%; height: 100.0%;">     <strong>Site ID:</strong> bx-01-118956<br>     <strong>Type:</strong> Link1.0<br>     <strong>Status:</strong> Live<br>     <strong>Address:</strong> 2882 3 AVENUE<br>     <strong>CB:</strong> 201     </div>`)[0];
+            popup_9585a0d00201ec21bd740ba60a2e1e0c.setContent(html_b21545b8c858080f4df29a3ab62a6f99);
+        
+
+        marker_6d04572cd071b446648aaa8bb5c1d38f.bindPopup(popup_9585a0d00201ec21bd740ba60a2e1e0c)
+        ;
+
+        
+    
+</script>
+</html>
